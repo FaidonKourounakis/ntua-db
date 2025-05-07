@@ -1,0 +1,181 @@
+      name      | average_artist_performance | average_overal_impression 
+----------------+----------------------------+---------------------------
+ christiecooper |                       3.07 |                      3.10
+(1 row)
+
+            Combination 1            
+-------------------------------------
+ Sequential Scans + Nested Loop Join
+(1 row)
+
+SET
+SET
+SET
+SET
+SET
+                                                                     QUERY PLAN                                                                     
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=16.84..1415.17 rows=1 width=100) (actual time=0.511..0.515 rows=1 loops=1)
+   ->  Nested Loop  (cost=16.84..1412.15 rows=401 width=20) (actual time=0.136..0.389 rows=500 loops=1)
+         ->  Nested Loop  (cost=8.57..16.60 rows=1 width=20) (actual time=0.065..0.070 rows=1 loops=1)
+               ->  Bitmap Heap Scan on performance  (cost=4.29..8.30 rows=1 width=8) (actual time=0.039..0.041 rows=1 loops=1)
+                     Recheck Cond: (artist_id = 42)
+                     Heap Blocks: exact=1
+                     ->  Bitmap Index Scan on idx_performance_artist_id  (cost=0.00..4.29 rows=1 width=0) (actual time=0.025..0.027 rows=1 loops=1)
+                           Index Cond: (artist_id = 42)
+               ->  Bitmap Heap Scan on artist  (cost=4.28..8.30 rows=1 width=16) (actual time=0.018..0.019 rows=1 loops=1)
+                     Recheck Cond: (artist_id = 42)
+                     Heap Blocks: exact=1
+                     ->  Bitmap Index Scan on artist_pkey  (cost=0.00..4.28 rows=1 width=0) (actual time=0.013..0.013 rows=1 loops=1)
+                           Index Cond: (artist_id = 42)
+         ->  Bitmap Heap Scan on rating  (cost=8.28..1390.57 rows=497 width=8) (actual time=0.068..0.178 rows=500 loops=1)
+               Recheck Cond: (performance.performance_id = performance_id)
+               Heap Blocks: exact=4
+               ->  Bitmap Index Scan on idx_rating_performance  (cost=0.00..8.15 rows=497 width=0) (actual time=0.049..0.049 rows=500 loops=1)
+                     Index Cond: (performance_id = performance.performance_id)
+ Planning Time: 0.525 ms
+ Execution Time: 0.722 ms
+(20 rows)
+
+        Combination 2         
+------------------------------
+ Sequential Scans + Hash Join
+(1 row)
+
+SET
+SET
+                                                                        QUERY PLAN                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=10000000012.59..10000011325.20 rows=1 width=100) (actual time=75.416..75.420 rows=1 loops=1)
+   ->  Nested Loop  (cost=10000000012.59..10000011322.17 rows=401 width=20) (actual time=54.541..75.377 rows=500 loops=1)
+         ->  Hash Join  (cost=8.31..11308.86 rows=401 width=8) (actual time=54.517..75.250 rows=500 loops=1)
+               Hash Cond: (rating.performance_id = performance.performance_id)
+               ->  Seq Scan on rating  (cost=0.00..9735.00 rows=594700 width=8) (actual time=0.027..32.056 rows=594700 loops=1)
+               ->  Hash  (cost=8.30..8.30 rows=1 width=8) (actual time=0.031..0.032 rows=1 loops=1)
+                     Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                     ->  Bitmap Heap Scan on performance  (cost=4.29..8.30 rows=1 width=8) (actual time=0.019..0.020 rows=1 loops=1)
+                           Recheck Cond: (artist_id = 42)
+                           Heap Blocks: exact=1
+                           ->  Bitmap Index Scan on idx_performance_artist_id  (cost=0.00..4.29 rows=1 width=0) (actual time=0.011..0.011 rows=1 loops=1)
+                                 Index Cond: (artist_id = 42)
+         ->  Materialize  (cost=4.28..8.30 rows=1 width=16) (actual time=0.000..0.000 rows=1 loops=500)
+               ->  Bitmap Heap Scan on artist  (cost=4.28..8.30 rows=1 width=16) (actual time=0.015..0.015 rows=1 loops=1)
+                     Recheck Cond: (artist_id = 42)
+                     Heap Blocks: exact=1
+                     ->  Bitmap Index Scan on artist_pkey  (cost=0.00..4.28 rows=1 width=0) (actual time=0.007..0.007 rows=1 loops=1)
+                           Index Cond: (artist_id = 42)
+ Planning Time: 0.379 ms
+ Execution Time: 75.968 ms
+(20 rows)
+
+         Combination 3         
+-------------------------------
+ Sequential Scans + Merge Join
+(1 row)
+
+SET
+SET
+                                                                        QUERY PLAN                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=10000066788.70..10000069769.25 rows=1 width=100) (actual time=146.687..146.689 rows=1 loops=1)
+   ->  Merge Join  (cost=10000066788.70..10000069766.22 rows=401 width=20) (actual time=146.594..146.654 rows=500 loops=1)
+         Merge Cond: (performance.performance_id = rating.performance_id)
+         ->  Sort  (cost=10000000016.61..10000000016.62 rows=1 width=20) (actual time=0.015..0.017 rows=1 loops=1)
+               Sort Key: performance.performance_id
+               Sort Method: quicksort  Memory: 25kB
+               ->  Nested Loop  (cost=10000000008.57..10000000016.60 rows=1 width=20) (actual time=0.012..0.013 rows=1 loops=1)
+                     ->  Bitmap Heap Scan on performance  (cost=4.29..8.30 rows=1 width=8) (actual time=0.006..0.007 rows=1 loops=1)
+                           Recheck Cond: (artist_id = 42)
+                           Heap Blocks: exact=1
+                           ->  Bitmap Index Scan on idx_performance_artist_id  (cost=0.00..4.29 rows=1 width=0) (actual time=0.004..0.004 rows=1 loops=1)
+                                 Index Cond: (artist_id = 42)
+                     ->  Bitmap Heap Scan on artist  (cost=4.28..8.30 rows=1 width=16) (actual time=0.003..0.004 rows=1 loops=1)
+                           Recheck Cond: (artist_id = 42)
+                           Heap Blocks: exact=1
+                           ->  Bitmap Index Scan on artist_pkey  (cost=0.00..4.28 rows=1 width=0) (actual time=0.002..0.002 rows=1 loops=1)
+                                 Index Cond: (artist_id = 42)
+         ->  Sort  (cost=66772.09..68258.84 rows=594700 width=8) (actual time=114.449..127.044 rows=395629 loops=1)
+               Sort Key: rating.performance_id
+               Sort Method: quicksort  Memory: 38515kB
+               ->  Seq Scan on rating  (cost=0.00..9735.00 rows=594700 width=8) (actual time=0.003..54.029 rows=594700 loops=1)
+ Planning Time: 0.196 ms
+ Execution Time: 148.008 ms
+(23 rows)
+
+            Combination 4             
+--------------------------------------
+ Force Index Scans + Nested Loop Join
+(1 row)
+
+SET
+SET
+SET
+SET
+                                                                       QUERY PLAN                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=0.98..44.72 rows=1 width=100) (actual time=0.155..0.156 rows=1 loops=1)
+   ->  Nested Loop  (cost=0.98..41.69 rows=401 width=20) (actual time=0.030..0.121 rows=500 loops=1)
+         ->  Nested Loop  (cost=0.55..16.60 rows=1 width=20) (actual time=0.020..0.021 rows=1 loops=1)
+               ->  Index Scan using idx_performance_artist_id on performance  (cost=0.28..8.29 rows=1 width=8) (actual time=0.015..0.015 rows=1 loops=1)
+                     Index Cond: (artist_id = 42)
+               ->  Index Scan using artist_pkey on artist  (cost=0.28..8.29 rows=1 width=16) (actual time=0.004..0.004 rows=1 loops=1)
+                     Index Cond: (artist_id = 42)
+         ->  Index Scan using idx_rating_performance on rating  (cost=0.42..20.12 rows=497 width=8) (actual time=0.009..0.057 rows=500 loops=1)
+               Index Cond: (performance_id = performance.performance_id)
+ Planning Time: 0.138 ms
+ Execution Time: 0.178 ms
+(11 rows)
+
+         Combination 5         
+-------------------------------
+ Force Index Scans + Hash Join
+(1 row)
+
+SET
+SET
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=10000000009.01..10000016706.12 rows=1 width=100) (actual time=93.095..93.097 rows=1 loops=1)
+   ->  Nested Loop  (cost=10000000009.01..10000016703.09 rows=401 width=20) (actual time=61.670..93.055 rows=500 loops=1)
+         ->  Hash Join  (cost=8.73..16689.78 rows=401 width=8) (actual time=61.655..92.942 rows=500 loops=1)
+               Hash Cond: (rating.performance_id = performance.performance_id)
+               ->  Index Scan using idx_rating_performance on rating  (cost=0.42..15115.92 rows=594700 width=8) (actual time=0.010..59.676 rows=594700 loops=1)
+               ->  Hash  (cost=8.29..8.29 rows=1 width=8) (actual time=0.008..0.009 rows=1 loops=1)
+                     Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                     ->  Index Scan using idx_performance_artist_id on performance  (cost=0.28..8.29 rows=1 width=8) (actual time=0.006..0.006 rows=1 loops=1)
+                           Index Cond: (artist_id = 42)
+         ->  Materialize  (cost=0.28..8.30 rows=1 width=16) (actual time=0.000..0.000 rows=1 loops=500)
+               ->  Index Scan using artist_pkey on artist  (cost=0.28..8.29 rows=1 width=16) (actual time=0.008..0.008 rows=1 loops=1)
+                     Index Cond: (artist_id = 42)
+ Planning Time: 0.113 ms
+ Execution Time: 93.121 ms
+(14 rows)
+
+         Combination 6          
+--------------------------------
+ Force Index Scans + Merge Join
+(1 row)
+
+SET
+SET
+                                                                        QUERY PLAN                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=10000000000.98..10000016685.25 rows=1 width=100) (actual time=60.417..60.418 rows=1 loops=1)
+   ->  Merge Join  (cost=10000000000.98..10000016682.22 rows=401 width=20) (actual time=60.174..60.378 rows=500 loops=1)
+         Merge Cond: (performance.performance_id = rating.performance_id)
+         ->  Nested Loop  (cost=10000000000.55..10000000075.53 rows=1 width=20) (actual time=0.135..0.232 rows=1 loops=1)
+               ->  Index Scan using performance_pkey on performance  (cost=0.28..67.23 rows=1 width=8) (actual time=0.130..0.225 rows=1 loops=1)
+                     Filter: (artist_id = 42)
+                     Rows Removed by Filter: 1482
+               ->  Index Scan using artist_pkey on artist  (cost=0.28..8.29 rows=1 width=16) (actual time=0.004..0.005 rows=1 loops=1)
+                     Index Cond: (artist_id = 42)
+         ->  Index Scan using idx_rating_performance on rating  (cost=0.42..15115.92 rows=594700 width=8) (actual time=0.004..39.813 rows=395629 loops=1)
+ Planning Time: 0.222 ms
+ Execution Time: 60.444 ms
+(12 rows)
+
+RESET
+RESET
+RESET
+RESET
+RESET

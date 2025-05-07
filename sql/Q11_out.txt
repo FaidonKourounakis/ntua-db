@@ -1,0 +1,708 @@
+  id  | performer_type |         name         | performances 
+------+----------------+----------------------+--------------
+  100 | Band           | Allen Collective     |            6
+   99 | Band           | Martin Collective    |            6
+   39 | Band           | Moore Collective     |            6
+   81 | Band           | Stevenson Collective |            6
+    1 | Band           | Gonzalez Collective  |            6
+    4 | Band           | Rogers Collective    |            6
+   88 | Band           | Williams Collective  |            6
+   57 | Band           | Lowe Collective      |            6
+   42 | Band           | Pittman Collective   |            6
+   74 | Band           | Noble Collective     |            6
+   28 | Band           | Jones Collective     |            5
+   50 | Band           | Wiley Collective     |            5
+   37 | Band           | Smith Collective     |            5
+   80 | Band           | Cook Collective      |            5
+  298 | Artist         | carolyncooper        |            5
+   63 | Band           | Hogan Collective     |            5
+   61 | Band           | Hunter Collective    |            5
+   62 | Band           | Harris Collective    |            5
+   65 | Band           | Schmidt Collective   |            5
+  775 | Artist         | Michelle Martin      |            5
+  123 | Artist         | latashagrant         |            5
+   10 | Band           | Murphy Collective    |            5
+   96 | Band           | Meza Collective      |            5
+   44 | Band           | Jackson Collective   |            5
+   83 | Band           | Williams Collective  |            5
+   94 | Band           | Henderson Collective |            5
+  555 | Artist         | Kenneth Burns        |            5
+   79 | Band           | Lewis Collective     |            5
+   75 | Band           | Graham Collective    |            5
+   86 | Band           | Kim Collective       |            5
+   36 | Band           | Martinez Collective  |            5
+  766 | Artist         | amanda70             |            4
+   33 | Artist         | Brianna Horne        |            4
+   73 | Band           | Thomas Collective    |            4
+   56 | Band           | Hendricks Collective |            4
+  491 | Artist         | Robert Sanchez       |            4
+   35 | Band           | Bowman Collective    |            4
+   27 | Band           | Hayden Collective    |            4
+   92 | Band           | Williams Collective  |            4
+   21 | Band           | Price Collective     |            4
+   87 | Band           | Parks Collective     |            4
+  693 | Artist         | hawkinsashley        |            4
+    7 | Band           | Bishop Collective    |            4
+  894 | Artist         | Christopher Knight   |            4
+  292 | Artist         | Stacey Carter        |            4
+  889 | Artist         | jonathancombs        |            4
+   90 | Band           | Vasquez Collective   |            4
+   33 | Band           | Montoya Collective   |            4
+  888 | Artist         | Joseph Lambert       |            4
+   68 | Artist         | johnsonjacob         |            4
+   53 | Band           | Johnston Collective  |            4
+  352 | Artist         | Amy Trujillo         |            4
+  541 | Artist         | Sandra Smith         |            4
+   20 | Band           | Mcdonald Collective  |            4
+   43 | Band           | Jones Collective     |            4
+  470 | Artist         | shannon58            |            4
+   15 | Band           | Smith Collective     |            4
+  329 | Artist         | gary69               |            4
+   69 | Artist         | ucordova             |            4
+   82 | Band           | James Collective     |            4
+    8 | Band           | Smith Collective     |            4
+   30 | Band           | Welch Collective     |            4
+    3 | Band           | Calderon Collective  |            4
+  553 | Artist         | Sharon Martinez      |            4
+  922 | Artist         | Donna Jensen         |            4
+  626 | Artist         | morganjudy           |            4
+  869 | Artist         | mathew63             |            4
+  109 | Artist         | Brandon Wilson       |            4
+  899 | Artist         | Sandra Bird          |            4
+   14 | Band           | Owens Collective     |            4
+  241 | Artist         | jbaker               |            4
+   34 | Band           | Mendoza Collective   |            4
+   66 | Band           | Jones Collective     |            4
+  973 | Artist         | lramirez             |            3
+  220 | Artist         | Stacie Wilson        |            3
+  415 | Artist         | gregorysoto          |            3
+   13 | Artist         | hawkinsashley        |            3
+  393 | Artist         | Debra Rose           |            3
+  536 | Artist         | msandoval            |            3
+   51 | Band           | Mcbride Collective   |            3
+  521 | Artist         | adam63               |            3
+   16 | Band           | Lane Collective      |            3
+  825 | Artist         | zsmith               |            3
+  106 | Artist         | gkim                 |            3
+   60 | Band           | Lee Collective       |            3
+  593 | Artist         | Tammy Sellers        |            3
+  397 | Artist         | thomas16             |            3
+  615 | Artist         | olivercharles        |            3
+   69 | Band           | Nichols Collective   |            3
+  549 | Artist         | steven97             |            3
+  284 | Artist         | Catherine Wall       |            3
+   87 | Artist         | Michele Levine       |            3
+  299 | Artist         | katie16              |            3
+  989 | Artist         | patriciaburns        |            3
+  632 | Artist         | James Allen          |            3
+   47 | Artist         | jimenezwilliam       |            3
+  855 | Artist         | elizabethblack       |            3
+  140 | Artist         | jacobsonwilliam      |            3
+  347 | Artist         | Cynthia Higgins      |            3
+  712 | Artist         | Connie Morris        |            3
+  190 | Artist         | xbowen               |            3
+  206 | Artist         | Dana Gates           |            3
+  954 | Artist         | rodneysolis          |            3
+  515 | Artist         | kevinwalker          |            3
+   70 | Band           | Rojas Collective     |            3
+  343 | Artist         | Alex Clay            |            3
+  345 | Artist         | Nathan Anderson      |            3
+  683 | Artist         | Cindy Walker         |            3
+   52 | Artist         | kathleenharrison     |            3
+  668 | Artist         | Tamara Carter        |            3
+  104 | Artist         | morrisjohn           |            3
+  938 | Artist         | Anthony Palmer       |            3
+    6 | Band           | Steele Collective    |            3
+  483 | Artist         | Anthony Parker       |            3
+  720 | Artist         | Jeremy Gonzalez      |            3
+  923 | Artist         | umoore               |            3
+  238 | Artist         | eadams               |            3
+  112 | Artist         | nriley               |            3
+  244 | Artist         | Connor Eaton         |            3
+  426 | Artist         | Gina Livingston      |            3
+  767 | Artist         | michaelgilbert       |            3
+  527 | Artist         | Sheena Bridges       |            3
+  501 | Artist         | Lisa White           |            3
+  466 | Artist         | Timothy Green        |            3
+  671 | Artist         | Christina Mccormick  |            3
+  574 | Artist         | christopher31        |            3
+   12 | Band           | Mack Collective      |            3
+   89 | Artist         | Lauren Clark         |            3
+  179 | Artist         | Jason Williams       |            3
+  499 | Artist         | nicholashenderson    |            3
+  859 | Artist         | forddavid            |            3
+  357 | Artist         | stephenglover        |            3
+  872 | Artist         | Christine Allen      |            3
+  249 | Artist         | Claire Phillips      |            3
+  976 | Artist         | Terrance Brown       |            3
+  346 | Artist         | alison37             |            3
+  925 | Artist         | Stacy Reed           |            3
+  901 | Artist         | Daniel Lee           |            3
+  913 | Artist         | dunnjulian           |            3
+  684 | Artist         | Chase Jackson        |            3
+  516 | Artist         | santanaamy           |            3
+  953 | Artist         | Jessica Patton       |            3
+  414 | Artist         | georgechavez         |            3
+  196 | Artist         | Connor Sparks        |            3
+  890 | Artist         | Melanie Miller       |            3
+   51 | Artist         | lmartin              |            3
+  731 | Artist         | Michael Reed         |            3
+  445 | Artist         | michaeljuarez        |            3
+  595 | Artist         | danielsjohn          |            3
+  907 | Artist         | zmack                |            3
+   89 | Band           | Wood Collective      |            3
+  482 | Artist         | Brenda Hill          |            3
+  711 | Artist         | Martha Carter        |            3
+   29 | Band           | Woodard Collective   |            3
+   54 | Artist         | daniellemaynard      |            3
+  548 | Artist         | ocooper              |            3
+  258 | Artist         | Casey Perkins        |            3
+  591 | Artist         | Laura Jones          |            2
+  887 | Artist         | rangeljamie          |            2
+  304 | Artist         | Tammy May            |            2
+   77 | Band           | Jones Collective     |            2
+   27 | Artist         | javier08             |            2
+  945 | Artist         | Eric Hall            |            2
+  419 | Artist         | charlesescobar       |            2
+  730 | Artist         | jacob49              |            2
+  906 | Artist         | johnbrooks           |            2
+  609 | Artist         | Alice Armstrong      |            2
+  139 | Artist         | John Jones           |            2
+  307 | Artist         | seth00               |            2
+  759 | Artist         | johngray             |            2
+  336 | Artist         | chavezcaitlin        |            2
+  182 | Artist         | stevensholly         |            2
+  173 | Artist         | Lori Vaughn          |            2
+  323 | Artist         | Joseph Freeman       |            2
+   64 | Artist         | david72              |            2
+  463 | Artist         | William Neal         |            2
+   81 | Artist         | Toni Davidson        |            2
+  447 | Artist         | connortaylor         |            2
+   47 | Band           | Fisher Collective    |            2
+   26 | Band           | Harris Collective    |            2
+   71 | Artist         | jeffrey13            |            2
+  474 | Artist         | Christine Wagner     |            2
+  490 | Artist         | Jennifer Stewart     |            2
+   53 | Artist         | carrtamara           |            2
+  162 | Artist         | judyhampton          |            2
+  342 | Artist         | Robert Ferguson      |            2
+  622 | Artist         | curtis14             |            2
+   52 | Band           | Hess Collective      |            2
+  983 | Artist         | Amy Mcconnell        |            2
+  680 | Artist         | lauramendez          |            2
+  950 | Artist         | Gina Martin          |            2
+  981 | Artist         | tthompson            |            2
+  895 | Artist         | brian00              |            2
+  667 | Artist         | matthew53            |            2
+  428 | Artist         | Ashley Savage        |            2
+  537 | Artist         | Angelica Roberson    |            2
+   83 | Artist         | Jacqueline Golden    |            2
+  631 | Artist         | nicholas18           |            2
+   71 | Band           | Hernandez Collective |            2
+   76 | Artist         | Philip Cruz          |            2
+  816 | Artist         | tjones               |            2
+  243 | Artist         | Christopher Simpson  |            2
+  126 | Artist         | jacksonmelissa       |            2
+  998 | Artist         | ashley32             |            2
+  138 | Artist         | Anthony Johnson      |            2
+   45 | Artist         | William Scott        |            2
+  804 | Artist         | Sarah Evans          |            2
+  834 | Artist         | Mary Stone           |            2
+  423 | Artist         | ujones               |            2
+  933 | Artist         | robinsonkaitlin      |            2
+   39 | Artist         | Diane Robertson      |            2
+   82 | Artist         | Andrea Murillo       |            2
+  741 | Artist         | bruce21              |            2
+  101 | Artist         | dustinramos          |            2
+  764 | Artist         | griffithangela       |            2
+  636 | Artist         | Christian Perkins    |            2
+   60 | Artist         | Jennifer Barnes      |            2
+  904 | Artist         | Robert Jennings      |            2
+  714 | Artist         | jacksondennis        |            2
+  561 | Artist         | rodriguezdavid       |            2
+  921 | Artist         | Ross Wolfe           |            2
+  120 | Artist         | james25              |            2
+  811 | Artist         | qstanley             |            2
+   19 | Artist         | Alexandra Morgan     |            2
+  780 | Artist         | tlester              |            2
+  155 | Artist         | James Woods          |            2
+  394 | Artist         | Alexis Gonzalez      |            2
+  863 | Artist         | andersondonna        |            2
+  960 | Artist         | zwong                |            2
+  338 | Artist         | eric28               |            2
+  324 | Artist         | makaylamiller        |            2
+  446 | Artist         | lewistammy           |            2
+  616 | Artist         | Juan Miller          |            2
+  745 | Artist         | Kevin Mcdonald       |            2
+  240 | Artist         | Brandy Williams      |            2
+  110 | Artist         | martinalexandria     |            2
+  413 | Artist         | paul41               |            2
+  577 | Artist         | Justin Stone         |            2
+  318 | Artist         | jtaylor              |            2
+  261 | Artist         | vthompson            |            2
+  672 | Artist         | amandareyes          |            2
+  167 | Artist         | davidfoster          |            2
+  744 | Artist         | justin50             |            2
+  531 | Artist         | swalker              |            2
+  866 | Artist         | middletondavid       |            2
+   59 | Artist         | Dan Cochran          |            2
+  319 | Artist         | achristian           |            2
+  697 | Artist         | John Nguyen          |            2
+   11 | Band           | Martin Collective    |            2
+  407 | Artist         | James Norris         |            2
+  967 | Artist         | Frederick Rodriguez  |            2
+  929 | Artist         | cobbjeffrey          |            2
+  350 | Artist         | rbaker               |            2
+  290 | Artist         | Reginald Garcia      |            2
+  948 | Artist         | Joyce Lambert        |            2
+  803 | Artist         | kellyaaron           |            2
+  422 | Artist         | Gary Jordan          |            2
+  942 | Artist         | Ashley Robinson      |            2
+  991 | Artist         | christopher07        |            2
+  218 | Artist         | Melissa Williams     |            2
+  937 | Artist         | steven56             |            2
+  661 | Artist         | amberhahn            |            2
+   64 | Band           | Haynes Collective    |            2
+  928 | Artist         | katherine83          |            2
+  156 | Artist         | Andrew Mcgee         |            2
+  380 | Artist         | Michael Bryant       |            2
+  492 | Artist         | Ronald Sims          |            2
+   55 | Band           | Cardenas Collective  |            2
+  325 | Artist         | jacquelinewilliams   |            2
+  927 | Artist         | Andrea Tucker        |            2
+  285 | Artist         | Matthew Ballard      |            2
+  314 | Artist         | Suzanne Martinez     |            2
+  406 | Artist         | lisajones            |            2
+  583 | Artist         | qwalker              |            2
+    5 | Band           | Walker Collective    |            2
+  565 | Artist         | tfoster              |            2
+  252 | Artist         | kenneth00            |            2
+  611 | Artist         | Ricardo Figueroa     |            2
+  673 | Artist         | santosjoel           |            2
+  737 | Artist         | diamondpadilla       |            2
+  242 | Artist         | ramosjohn            |            2
+  847 | Artist         | Keith Evans          |            2
+  353 | Artist         | fperez               |            2
+  399 | Artist         | waltermorrison       |            2
+  992 | Artist         | Tracy Edwards        |            2
+  105 | Artist         | murraylori           |            2
+  765 | Artist         | Richard Davis        |            2
+  116 | Artist         | jcontreras           |            2
+  809 | Artist         | Travis Stewart       |            2
+  124 | Artist         | torresjessica        |            2
+  152 | Artist         | Robert Graham        |            2
+  404 | Artist         | brownchad            |            2
+   24 | Band           | Mendoza Collective   |            2
+  823 | Artist         | Sharon Jackson       |            2
+  603 | Artist         | Kelly Ritter         |            2
+   98 | Band           | Stephens Collective  |            2
+  276 | Artist         | Madison Love         |            2
+  250 | Artist         | Mark Mcdaniel        |            2
+  517 | Artist         | benjamingriffin      |            2
+  679 | Artist         | Matthew Maynard      |            2
+  328 | Artist         | William Luna         |            2
+  216 | Artist         | Kenneth Moore        |            2
+  800 | Artist         | stevenquinn          |            2
+  128 | Artist         | nestes               |            2
+   93 | Band           | Clark Collective     |            2
+  990 | Artist         | cfields              |            2
+  200 | Artist         | Gabriel Harrison     |            2
+  219 | Artist         | mwilliams            |            2
+  587 | Artist         | hartbrian            |            2
+  645 | Artist         | dboyd                |            2
+  165 | Artist         | ldavis               |            2
+  135 | Artist         | Leslie Murphy        |            2
+  125 | Artist         | bmoore               |            2
+  204 | Artist         | mcintoshrichard      |            2
+  762 | Artist         | David Johnson        |            2
+  184 | Artist         | Pamela Hernandez     |            2
+  473 | Artist         | Travis Oneal         |            2
+  692 | Artist         | Amber Garza          |            2
+  810 | Artist         | Toni Lopez           |            2
+  455 | Artist         | corey90              |            2
+  430 | Artist         | glendarodriguez      |            2
+  130 | Artist         | Lisa Walter          |            2
+   16 | Artist         | amber58              |            2
+  974 | Artist         | Anne Dodson          |            2
+  234 | Artist         | danielsnatalie       |            2
+  897 | Artist         | Roger Higgins        |            2
+   78 | Band           | Payne Collective     |            2
+  341 | Artist         | allenmichael         |            2
+  827 | Artist         | Angela Reyes         |            2
+  153 | Artist         | johnmurray           |            2
+   49 | Artist         | edwinmurray          |            2
+   84 | Band           | Ray Collective       |            2
+  999 | Artist         | Laura Williams       |            2
+  552 | Artist         | Albert Ortega        |            2
+   35 | Artist         | John Bartlett        |            2
+  936 | Artist         | Chloe Humphrey       |            2
+  588 | Artist         | Darius Hayes         |            2
+  208 | Artist         | Robert Jordan        |            2
+  375 | Artist         | Megan Brown          |            2
+  369 | Artist         | jjohnson             |            2
+  226 | Artist         | garystrong           |            2
+  185 | Artist         | mark89               |            2
+  930 | Artist         | Shannon Evans        |            2
+  444 | Artist         | natasha28            |            2
+  245 | Artist         | smithmichael         |            2
+  905 | Artist         | Barry Arroyo         |            2
+  382 | Artist         | Patricia Garcia      |            2
+  102 | Artist         | Angela Wells         |            2
+  743 | Artist         | Kristin Smith        |            2
+  479 | Artist         | Paul Moore           |            2
+  932 | Artist         | Samantha Bradley     |            2
+  533 | Artist         | marshalleric         |            2
+  440 | Artist         | Jonathan Paul        |            2
+  233 | Artist         | bradyrebecca         |            2
+  867 | Artist         | pmiller              |            2
+  546 | Artist         | sarah00              |            2
+  566 | Artist         | Jared Oconnor        |            2
+    9 | Artist         | ericrowland          |            1
+   66 | Artist         | robert89             |            1
+  296 | Artist         | privera              |            1
+  966 | Artist         | Brittany Marshall    |            1
+  709 | Artist         | Jamie Higgins        |            1
+  702 | Artist         | Anthony Berger       |            1
+  143 | Artist         | William Escobar      |            1
+  646 | Artist         | bthompson            |            1
+  107 | Artist         | Lindsey Butler       |            1
+  331 | Artist         | Jeremy Lopez         |            1
+  186 | Artist         | jacobsonholly        |            1
+   74 | Artist         | kelsey58             |            1
+  586 | Artist         | Jeremy Rocha         |            1
+  388 | Artist         | Debbie Scott         |            1
+  360 | Artist         | ywilson              |            1
+  362 | Artist         | Bobby Martin         |            1
+  137 | Artist         | rodriguezmegan       |            1
+  513 | Artist         | andrewskristi        |            1
+  450 | Artist         | wrightlauren         |            1
+  301 | Artist         | Jason Carpenter      |            1
+  379 | Artist         | harriskenneth        |            1
+  727 | Artist         | Deborah Stein        |            1
+  663 | Artist         | Taylor Mitchell      |            1
+  453 | Artist         | lduncan              |            1
+  113 | Artist         | John Rodriguez       |            1
+  729 | Artist         | hmartin              |            1
+  232 | Artist         | Willie Burke         |            1
+  813 | Artist         | David Castillo       |            1
+  868 | Artist         | armstrongtammy       |            1
+  977 | Artist         | Jennifer Wilson      |            1
+  723 | Artist         | Lisa Singh           |            1
+  625 | Artist         | mpratt               |            1
+   15 | Artist         | josephnicole         |            1
+  716 | Artist         | martinezjanet        |            1
+  920 | Artist         | jordanchelsea        |            1
+  363 | Artist         | ashley87             |            1
+  270 | Artist         | Mark Carlson         |            1
+  717 | Artist         | Jamie Price          |            1
+  605 | Artist         | Gabriel Armstrong    |            1
+   68 | Band           | Obrien Collective    |            1
+  848 | Artist         | Matthew Lee          |            1
+  158 | Artist         | Shelly Dickerson     |            1
+  788 | Artist         | Vicki Jordan         |            1
+  224 | Artist         | dmartinez            |            1
+  978 | Artist         | jasonhernandez       |            1
+  653 | Artist         | Emily Wood           |            1
+  427 | Artist         | michaelpineda        |            1
+   10 | Artist         | stephanie65          |            1
+  115 | Artist         | gina92               |            1
+   28 | Artist         | Anthony Hernandez    |            1
+  421 | Artist         | thomasmallory        |            1
+  651 | Artist         | justinhall           |            1
+  368 | Artist         | ovargas              |            1
+   13 | Band           | Robertson Collective |            1
+  924 | Artist         | Teresa English       |            1
+  763 | Artist         | nathaniel07          |            1
+   36 | Artist         | lozanoanthony        |            1
+  912 | Artist         | Joshua Barajas       |            1
+  221 | Artist         | jwilson              |            1
+  776 | Artist         | xcruz                |            1
+ 1000 | Artist         | watersbrandon        |            1
+  820 | Artist         | vanderson            |            1
+  843 | Artist         | bernardbrian         |            1
+  361 | Artist         | joseph64             |            1
+  320 | Artist         | christine55          |            1
+  468 | Artist         | David Morris         |            1
+  713 | Artist         | Christopher Young    |            1
+    5 | Artist         | Danny Ward           |            1
+  567 | Artist         | Craig Barrera        |            1
+  175 | Artist         | Thomas Watson        |            1
+  911 | Artist         | williammarshall      |            1
+  621 | Artist         | William Hall         |            1
+  506 | Artist         | rogerssusan          |            1
+  523 | Artist         | dalerowland          |            1
+  309 | Artist         | Robert Carey         |            1
+  648 | Artist         | yhughes              |            1
+  655 | Artist         | Kaitlyn Ramirez      |            1
+  505 | Artist         | Matthew Jackson      |            1
+  778 | Artist         | Ashley Sanders       |            1
+  528 | Artist         | George Bailey        |            1
+   44 | Artist         | sheilaanderson       |            1
+   55 | Artist         | nmoore               |            1
+  943 | Artist         | Linda Alvarez        |            1
+  640 | Artist         | kerry50              |            1
+  300 | Artist         | anthony41            |            1
+  641 | Artist         | smitholivia          |            1
+  205 | Artist         | Brenda Hayes         |            1
+  865 | Artist         | Debbie Palmer        |            1
+  748 | Artist         | osmith               |            1
+  207 | Artist         | williamslisa         |            1
+  592 | Artist         | ireynolds            |            1
+  214 | Artist         | Melissa Campbell     |            1
+  941 | Artist         | igarcia              |            1
+  348 | Artist         | Stanley Miller       |            1
+   86 | Artist         | Justin Humphrey      |            1
+  131 | Artist         | elizabeth03          |            1
+  678 | Artist         | allenjennifer        |            1
+  132 | Artist         | Jessica Fisher       |            1
+  934 | Artist         | Ricardo Turner       |            1
+   48 | Artist         | landerson            |            1
+  944 | Artist         | hutchinsonmelissa    |            1
+  389 | Artist         | ssolis               |            1
+  201 | Artist         | tracicarr            |            1
+  987 | Artist         | Michael Smith        |            1
+  802 | Artist         | Phillip Saunders     |            1
+  786 | Artist         | nunezamy             |            1
+   72 | Artist         | Tiffany Lloyd        |            1
+  861 | Artist         | laurenreynolds       |            1
+  372 | Artist         | hlopez               |            1
+  210 | Artist         | Robert Lee           |            1
+  349 | Artist         | Joseph Knight        |            1
+  659 | Artist         | maryferrell          |            1
+  391 | Artist         | Rick Frank           |            1
+  408 | Artist         | nealdavid            |            1
+  700 | Artist         | gibsonethan          |            1
+   78 | Artist         | Carolyn Jones        |            1
+  607 | Artist         | santosmichelle       |            1
+  698 | Artist         | mjohnson             |            1
+  806 | Artist         | dawn81               |            1
+   93 | Artist         | ryancollins          |            1
+   32 | Artist         | iduncan              |            1
+  770 | Artist         | Eric Warner          |            1
+  525 | Artist         | Madison Silva        |            1
+  613 | Artist         | Thomas Avila         |            1
+  782 | Artist         | Troy Lawrence        |            1
+   18 | Artist         | mmcdaniel            |            1
+  213 | Artist         | Courtney Miller      |            1
+  286 | Artist         | Michael Jones        |            1
+  457 | Artist         | alexanderjacqueline  |            1
+  439 | Artist         | Jason Smith          |            1
+   24 | Artist         | Victoria Parker      |            1
+  159 | Artist         | Melissa Blevins      |            1
+  690 | Artist         | davisdawn            |            1
+  982 | Artist         | michaellarson        |            1
+  265 | Artist         | juanbecker           |            1
+  761 | Artist         | Timothy Lane         |            1
+  665 | Artist         | melissa20            |            1
+  969 | Artist         | Kristi Long          |            1
+  543 | Artist         | John Yang            |            1
+  305 | Artist         | ibrown               |            1
+  247 | Artist         | bgarner              |            1
+   32 | Band           | Hatfield Collective  |            1
+  896 | Artist         | Kelly Norris         |            1
+  442 | Artist         | williamlee           |            1
+  808 | Artist         | uduffy               |            1
+  367 | Artist         | emily00              |            1
+   29 | Artist         | williamwilliams      |            1
+  157 | Artist         | Rhonda Smith         |            1
+  215 | Artist         | teresasimon          |            1
+  518 | Artist         | Courtney Bailey      |            1
+  733 | Artist         | williamstaylor       |            1
+  951 | Artist         | Joshua Marshall      |            1
+  289 | Artist         | Laurie Hall          |            1
+  484 | Artist         | Joshua Smith         |            1
+  796 | Artist         | xjohnson             |            1
+  958 | Artist         | rodriguezsamantha    |            1
+  464 | Artist         | russodeborah         |            1
+   97 | Band           | Ferguson Collective  |            1
+   31 | Artist         | Joseph Whitehead     |            1
+  758 | Artist         | jillgallagher        |            1
+  891 | Artist         | xcrane               |            1
+  874 | Artist         | julieconley          |            1
+  563 | Artist         | Karen Martin         |            1
+  183 | Artist         | Joseph Booker        |            1
+  274 | Artist         | Brian Brooks         |            1
+  619 | Artist         | Mallory Rivera       |            1
+  649 | Artist         | lori83               |            1
+  846 | Artist         | lisa16               |            1
+  719 | Artist         | contreraslogan       |            1
+  791 | Artist         | gwilliams            |            1
+  141 | Artist         | Kelly Glover         |            1
+  821 | Artist         | chavezpamela         |            1
+   94 | Artist         | Daniel Cohen         |            1
+  794 | Artist         | fosterbradley        |            1
+   57 | Artist         | Lynn Taylor          |            1
+  903 | Artist         | Courtney Schultz     |            1
+  313 | Artist         | Sarah Garcia         |            1
+  142 | Artist         | qsantiago            |            1
+  384 | Artist         | heather34            |            1
+   42 | Artist         | christiecooper       |            1
+    4 | Artist         | robertperez          |            1
+    7 | Artist         | hillamanda           |            1
+  520 | Artist         | zgarza               |            1
+  658 | Artist         | Jennifer Galloway    |            1
+  721 | Artist         | fstephens            |            1
+  335 | Artist         | fedwards             |            1
+   96 | Artist         | Lisa Wu              |            1
+  458 | Artist         | Danielle Koch        |            1
+  812 | Artist         | Megan Taylor         |            1
+  701 | Artist         | vaughnellen          |            1
+   48 | Band           | Khan Collective      |            1
+  273 | Artist         | Jason Mendez         |            1
+  628 | Artist         | melissa38            |            1
+  212 | Artist         | swinters             |            1
+  799 | Artist         | Christian Wagner     |            1
+  940 | Artist         | christinaholland     |            1
+  687 | Artist         | Michael Hoffman      |            1
+  227 | Artist         | skim                 |            1
+  708 | Artist         | lynchshelly          |            1
+  962 | Artist         | Julie Jordan         |            1
+  412 | Artist         | Cody Wright          |            1
+  559 | Artist         | Malik Scott          |            1
+   11 | Artist         | Richard Castillo     |            1
+  177 | Artist         | Leslie Diaz          |            1
+  873 | Artist         | mashley              |            1
+  627 | Artist         | Elizabeth Morgan     |            1
+  892 | Artist         | Daniel Moore         |            1
+  268 | Artist         | Kristen Robinson     |            1
+  768 | Artist         | Barry Page           |            1
+  746 | Artist         | Maria Black          |            1
+  985 | Artist         | lisa32               |            1
+  452 | Artist         | bobby42              |            1
+   56 | Artist         | trujillokeith        |            1
+  111 | Artist         | Sharon Mcneil        |            1
+  795 | Artist         | garciadevon          |            1
+  771 | Artist         | monica66             |            1
+   63 | Artist         | John Solis           |            1
+  839 | Artist         | heathelizabeth       |            1
+  147 | Artist         | Chad Delacruz        |            1
+  596 | Artist         | Stephanie Lloyd      |            1
+  500 | Artist         | jsmith               |            1
+   88 | Artist         | hernandeztracy       |            1
+  418 | Artist         | Gary Harvey          |            1
+  787 | Artist         | edwardmyers          |            1
+  557 | Artist         | catherine65          |            1
+  374 | Artist         | lopezryan            |            1
+  639 | Artist         | kathrynstevens       |            1
+  635 | Artist         | melissashaw          |            1
+  315 | Artist         | Kevin Cook           |            1
+  882 | Artist         | Douglas Edwards      |            1
+  435 | Artist         | pgardner             |            1
+  726 | Artist         | hmckay               |            1
+  251 | Artist         | Adam Scott           |            1
+  624 | Artist         | hatfieldjennifer     |            1
+  805 | Artist         | ltaylor              |            1
+  602 | Artist         | lisadrake            |            1
+  390 | Artist         | angela40             |            1
+  670 | Artist         | Douglas Cooper       |            1
+  946 | Artist         | ljohnson             |            1
+  263 | Artist         | hray                 |            1
+  875 | Artist         | Ashley Barker        |            1
+  870 | Artist         | parrishmichael       |            1
+  481 | Artist         | Julia Washington     |            1
+  119 | Artist         | buckleylisa          |            1
+  769 | Artist         | Guy Brewer           |            1
+  461 | Artist         | Terri Riley          |            1
+  354 | Artist         | paul76               |            1
+   91 | Artist         | rwright              |            1
+  638 | Artist         | Eugene Allen         |            1
+  852 | Artist         | scott80              |            1
+  532 | Artist         | paul00               |            1
+  377 | Artist         | iwilliams            |            1
+  310 | Artist         | Kevin Flores         |            1
+  231 | Artist         | rachel90             |            1
+  278 | Artist         | rlewis               |            1
+  163 | Artist         | curtistravis         |            1
+  308 | Artist         | stonekathy           |            1
+  281 | Artist         | Joan Chase           |            1
+  154 | Artist         | Hunter Flores        |            1
+  829 | Artist         | edward99             |            1
+  599 | Artist         | stanleyalexander     |            1
+  669 | Artist         | Samantha Anderson    |            1
+  807 | Artist         | Charles Quinn        |            1
+  477 | Artist         | Kevin Perkins        |            1
+  576 | Artist         | James Washington     |            1
+  798 | Artist         | Chad Foster          |            1
+  614 | Artist         | Emily Spencer        |            1
+  910 | Artist         | Tyrone Martin        |            1
+    3 | Artist         | Lindsey Davis        |            1
+  634 | Artist         | gonzalesjose         |            1
+  881 | Artist         | John Cruz            |            1
+  287 | Artist         | Corey Gonzalez       |            1
+  952 | Artist         | Kenneth Harvey       |            1
+  608 | Artist         | leeanthony           |            1
+  178 | Artist         | david15              |            1
+  431 | Artist         | Timothy Brown        |            1
+  229 | Artist         | evelyn79             |            1
+  707 | Artist         | vrivas               |            1
+   25 | Artist         | Eric Kelley          |            1
+   54 | Band           | Murray Collective    |            1
+  480 | Artist         | brandyvasquez        |            1
+  785 | Artist         | Edward Williams      |            1
+  664 | Artist         | Joshua Smith         |            1
+  133 | Artist         | michael74            |            1
+  493 | Artist         | Jennifer Barton      |            1
+  682 | Artist         | andrew71             |            1
+  642 | Artist         | Bryan Reynolds       |            1
+  832 | Artist         | Terrence Garcia      |            1
+  371 | Artist         | Christina Collins    |            1
+  166 | Artist         | hjones               |            1
+  783 | Artist         | Bradley Peters       |            1
+  818 | Artist         | Gabriel Sanders      |            1
+  321 | Artist         | Adam Hansen          |            1
+   61 | Artist         | Alexander Vazquez    |            1
+  302 | Artist         | Brian Hall           |            1
+  436 | Artist         | Cindy Harvey         |            1
+  193 | Artist         | barbarawalters       |            1
+  860 | Artist         | joelshelton          |            1
+  322 | Artist         | Paul Robinson        |            1
+  524 | Artist         | Nancy Kim            |            1
+  993 | Artist         | brianwilliams        |            1
+   85 | Artist         | Angela Bishop        |            1
+  297 | Artist         | gina04               |            1
+  146 | Artist         | Caroline Lopez       |            1
+  689 | Artist         | Howard Herrera       |            1
+  271 | Artist         | ashley18             |            1
+  161 | Artist         | newmanpaul           |            1
+  569 | Artist         | Eric Patterson       |            1
+  485 | Artist         | John Johnson         |            1
+  691 | Artist         | Susan Rios           |            1
+  915 | Artist         | sherry53             |            1
+  544 | Artist         | phillipsbrian        |            1
+   58 | Artist         | Kirsten Johnson      |            1
+  266 | Artist         | Kelly Anderson       |            1
+  957 | Artist         | donnalawson          |            1
+  180 | Artist         | Heidi Johnson        |            1
+  118 | Artist         | randall88            |            1
+  893 | Artist         | markbrown            |            1
+  781 | Artist         | terrylisa            |            1
+  902 | Artist         | jillianjones         |            1
+   26 | Artist         | christysavage        |            1
+  497 | Artist         | fischerholly         |            1
+  228 | Artist         | margaretgarcia       |            1
+  303 | Artist         | jeffrey66            |            1
+  551 | Artist         | Carrie Mcdonald      |            1
+  545 | Artist         | zwalker              |            1
+   65 | Artist         | Alexander Nicholson  |            1
+  334 | Artist         | morrisonkimberly     |            1
+  900 | Artist         | Angela Acevedo       |            1
+  121 | Artist         | hillheather          |            1
+  269 | Artist         | Brian Lawrence       |            1
+  833 | Artist         | Brian Hughes         |            1
+  647 | Artist         | Rebecca Diaz         |            1
+  100 | Artist         | mcgeekevin           |            1
+    6 | Artist         | Robert Williams      |            1
+  995 | Artist         | Mike Spencer         |            1
+  122 | Artist         | johnnyleonard        |            1
+  503 | Artist         | allisonalvarez       |            1
+   22 | Artist         | andrew06             |            1
+  849 | Artist         | michaelpacheco       |            1
+  571 | Artist         | Catherine Wiley      |            1
+  264 | Artist         | bblackwell           |            1
+  963 | Artist         | Michael Adams        |            1
+   12 | Artist         | uelliott             |            1
+  198 | Artist         | randall01            |            1
+  181 | Artist         | Lori Cobb            |            1
+  355 | Artist         | Mark Leon            |            1
+(704 rows)
+

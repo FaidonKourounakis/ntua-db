@@ -1,0 +1,5 @@
+ Festival with min. avg. exp. of technical personnel | Year | Average Experience (1-5) 
+-----------------------------------------------------+------+--------------------------
+ Festival 2024                                       | 2024 |       2.8877640845070423
+(1 row)
+

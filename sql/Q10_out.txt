@@ -1,0 +1,7 @@
+ first_genre | second_genre | total_occurences 
+-------------+--------------+------------------
+ Rock        | Pop          |              786
+ Pop         | Hip Hop      |              411
+ Rock        | Hip Hop      |              406
+(3 rows)
+

@@ -1,0 +1,73 @@
+ performer_type | performer_id |   performer_name    |                  continents                  
+----------------+--------------+---------------------+----------------------------------------------
+ Artist         |           33 | Brianna Horne       | Europe, North America, South America
+ Artist         |           51 | lmartin             | Africa, Europe, South America
+ Artist         |           69 | ucordova            | Africa, Europe, North America, South America
+ Artist         |           87 | Michele Levine      | Europe, North America, South America
+ Artist         |          106 | gkim                | Europe, North America, South America
+ Artist         |          123 | latashagrant        | Africa, North America, South America
+ Artist         |          196 | Connor Sparks       | Africa, North America, South America
+ Artist         |          241 | jbaker              | Europe, North America, South America
+ Artist         |          258 | Casey Perkins       | Africa, Europe, North America
+ Artist         |          329 | gary69              | Africa, Europe, South America
+ Artist         |          347 | Cynthia Higgins     | Africa, North America, South America
+ Artist         |          352 | Amy Trujillo        | Africa, Europe, North America
+ Artist         |          397 | thomas16            | Africa, Europe, North America
+ Artist         |          414 | georgechavez        | Africa, Europe, South America
+ Artist         |          445 | michaeljuarez       | Africa, Europe, North America
+ Artist         |          470 | shannon58           | Africa, Europe, South America
+ Artist         |          482 | Brenda Hill         | Africa, Europe, South America
+ Artist         |          536 | msandoval           | Africa, Europe, South America
+ Artist         |          541 | Sandra Smith        | Africa, North America, South America
+ Artist         |          549 | steven97            | Africa, Europe, North America
+ Artist         |          553 | Sharon Martinez     | Africa, Europe, North America, South America
+ Artist         |          555 | Kenneth Burns       | Africa, North America, South America
+ Artist         |          574 | christopher31       | Africa, Europe, North America
+ Artist         |          593 | Tammy Sellers       | Africa, Europe, South America
+ Artist         |          615 | olivercharles       | Europe, North America, South America
+ Artist         |          626 | morganjudy          | Europe, North America, South America
+ Artist         |          668 | Tamara Carter       | Africa, North America, South America
+ Artist         |          671 | Christina Mccormick | Europe, North America, South America
+ Artist         |          683 | Cindy Walker        | Africa, Europe, South America
+ Artist         |          684 | Chase Jackson       | Africa, Europe, North America
+ Artist         |          693 | hawkinsashley       | Africa, Europe, North America
+ Artist         |          711 | Martha Carter       | Europe, North America, South America
+ Artist         |          731 | Michael Reed        | Africa, North America, South America
+ Artist         |          766 | amanda70            | Africa, Europe, North America
+ Artist         |          775 | Michelle Martin     | Europe, North America, South America
+ Artist         |          855 | elizabethblack      | Europe, North America, South America
+ Artist         |          869 | mathew63            | Africa, Europe, North America
+ Artist         |          888 | Joseph Lambert      | Africa, Europe, North America
+ Artist         |          889 | jonathancombs       | Africa, Europe, South America
+ Artist         |          938 | Anthony Palmer      | Africa, Europe, South America
+ Band           |            4 | Rogers Collective   | Africa, North America, South America
+ Band           |           10 | Murphy Collective   | Europe, North America, South America
+ Band           |           15 | Smith Collective    | Africa, North America, South America
+ Band           |           23 | Padilla Collective  | Europe, North America, South America
+ Band           |           25 | Horne Collective    | Europe, North America, South America
+ Band           |           30 | Welch Collective    | Europe, North America, South America
+ Band           |           33 | Montoya Collective  | Africa, North America, South America
+ Band           |           36 | Martinez Collective | Africa, Europe, North America
+ Band           |           40 | Evans Collective    | Africa, Europe, North America
+ Band           |           41 | Thompson Collective | Africa, Europe, North America, South America
+ Band           |           42 | Pittman Collective  | Africa, Europe, North America
+ Band           |           43 | Jones Collective    | Africa, Europe, North America
+ Band           |           46 | Long Collective     | Africa, Europe, North America
+ Band           |           49 | Ortega Collective   | Africa, Europe, North America
+ Band           |           50 | Wiley Collective    | Europe, North America, South America
+ Band           |           57 | Lowe Collective     | Africa, Europe, North America, South America
+ Band           |           59 | Kelley Collective   | Europe, North America, South America
+ Band           |           60 | Lee Collective      | Africa, Europe, North America
+ Band           |           65 | Schmidt Collective  | Africa, North America, South America
+ Band           |           66 | Jones Collective    | Africa, Europe, North America, South America
+ Band           |           67 | Rios Collective     | Africa, Europe, North America
+ Band           |           70 | Rojas Collective    | Europe, North America, South America
+ Band           |           72 | Garner Collective   | Africa, Europe, North America
+ Band           |           73 | Thomas Collective   | Europe, North America, South America
+ Band           |           83 | Williams Collective | Africa, Europe, North America
+ Band           |           85 | Williams Collective | Africa, Europe, North America, South America
+ Band           |           95 | Williams Collective | Africa, Europe, North America, South America
+ Band           |           99 | Martin Collective   | Africa, Europe, North America
+ Band           |          100 | Allen Collective    | Europe, North America, South America
+(69 rows)
+

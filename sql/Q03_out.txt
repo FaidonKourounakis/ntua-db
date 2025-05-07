@@ -1,0 +1,8 @@
+ performer_type | performer_id |        name         | festival_year | warm_up_count 
+----------------+--------------+---------------------+---------------+---------------
+ Band           |            1 | Gonzalez Collective |          2022 |             3
+ Band           |           25 | Horne Collective    |          2023 |             3
+ Band           |           34 | Mendoza Collective  |          2019 |             3
+ Band           |           61 | Hunter Collective   |          2023 |             3
+(4 rows)
+

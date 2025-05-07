@@ -1,0 +1,281 @@
+ performer_type | id  |         name         | age | performances 
+----------------+-----+----------------------+-----+--------------
+ Band           |  18 | Vasquez Collective   |  10 |           11
+ Band           |   9 | Sharp Collective     |   3 |           10
+ Band           |  95 | Williams Collective  |  14 |            9
+ Band           |  19 | Shepard Collective   |   8 |            8
+ Band           |  59 | Kelley Collective    |  11 |            8
+ Band           |  38 | Velazquez Collective |   6 |            8
+ Band           |  22 | Mitchell Collective  |  18 |            8
+ Band           |  25 | Horne Collective     |   9 |            8
+ Band           |  46 | Long Collective      |   1 |            8
+ Band           |  23 | Padilla Collective   |  13 |            8
+ Band           |  67 | Rios Collective      |  11 |            8
+ Band           |  40 | Evans Collective     |   8 |            8
+ Band           |  41 | Thompson Collective  |  15 |            7
+ Band           |  31 | Johnston Collective  |   2 |            7
+ Band           |  85 | Williams Collective  |  11 |            7
+ Band           |  17 | Wood Collective      |  14 |            7
+ Band           |  58 | Todd Collective      |  14 |            7
+ Band           |  72 | Garner Collective    |  19 |            7
+ Band           |  49 | Ortega Collective    |  12 |            7
+ Band           |  99 | Martin Collective    |  10 |            6
+ Band           |   1 | Gonzalez Collective  |  18 |            6
+ Band           |   4 | Rogers Collective    |   7 |            6
+ Band           |  88 | Williams Collective  |  19 |            6
+ Band           |  39 | Moore Collective     |  14 |            6
+ Band           |  74 | Noble Collective     |   5 |            6
+ Band           |  57 | Lowe Collective      |  14 |            6
+ Band           | 100 | Allen Collective     |   5 |            6
+ Band           |  42 | Pittman Collective   |  16 |            6
+ Band           |  81 | Stevenson Collective |  17 |            6
+ Band           |  80 | Cook Collective      |  17 |            5
+ Band           |  86 | Kim Collective       |   8 |            5
+ Band           |  79 | Lewis Collective     |  11 |            5
+ Band           |  94 | Henderson Collective |  15 |            5
+ Band           |  50 | Wiley Collective     |   9 |            5
+ Band           |  75 | Graham Collective    |   1 |            5
+ Band           |  65 | Schmidt Collective   |   3 |            5
+ Band           |  61 | Hunter Collective    |  12 |            5
+ Band           |  44 | Jackson Collective   |  17 |            5
+ Band           |  36 | Martinez Collective  |  18 |            5
+ Band           |  63 | Hogan Collective     |   5 |            5
+ Band           |  62 | Harris Collective    |   7 |            5
+ Band           |  83 | Williams Collective  |   0 |            5
+ Band           |  37 | Smith Collective     |  16 |            5
+ Band           |  96 | Meza Collective      |  18 |            5
+ Band           |  10 | Murphy Collective    |  16 |            5
+ Band           |  28 | Jones Collective     |  15 |            5
+ Band           |  56 | Hendricks Collective |  15 |            4
+ Band           |  34 | Mendoza Collective   |  12 |            4
+ Band           |  90 | Vasquez Collective   |  15 |            4
+ Band           |  15 | Smith Collective     |  13 |            4
+ Band           |  73 | Thomas Collective    |  19 |            4
+ Band           |  92 | Williams Collective  |  18 |            4
+ Artist         | 352 | Amy Trujillo         |  28 |            4
+ Band           |  53 | Johnston Collective  |  19 |            4
+ Artist         | 553 | Sharon Martinez      |  24 |            4
+ Band           |  33 | Montoya Collective   |   9 |            4
+ Artist         | 292 | Stacey Carter        |  17 |            4
+ Band           |  87 | Parks Collective     |   4 |            4
+ Band           |  35 | Bowman Collective    |   6 |            4
+ Band           |  66 | Jones Collective     |   2 |            4
+ Band           |  82 | James Collective     |  14 |            4
+ Artist         | 922 | Donna Jensen         |  25 |            4
+ Artist         | 766 | amanda70             |  20 |            4
+ Artist         |  69 | ucordova             |  16 |            4
+ Band           |  27 | Hayden Collective    |  16 |            4
+ Artist         | 241 | jbaker               |  28 |            4
+ Artist         | 491 | Robert Sanchez       |  25 |            4
+ Band           |   8 | Smith Collective     |  17 |            4
+ Band           |  20 | Mcdonald Collective  |   3 |            4
+ Artist         |  68 | johnsonjacob         |  16 |            4
+ Band           |   7 | Bishop Collective    |  12 |            4
+ Artist         | 329 | gary69               |  25 |            4
+ Band           |  43 | Jones Collective     |  16 |            4
+ Band           |  14 | Owens Collective     |  13 |            4
+ Band           |  30 | Welch Collective     |  15 |            4
+ Band           |  21 | Price Collective     |  13 |            4
+ Band           |   3 | Calderon Collective  |   3 |            4
+ Band           |  51 | Mcbride Collective   |   1 |            3
+ Artist         | 501 | Lisa White           |  29 |            3
+ Artist         | 593 | Tammy Sellers        |  27 |            3
+ Artist         | 220 | Stacie Wilson        |  29 |            3
+ Band           |  69 | Nichols Collective   |  12 |            3
+ Band           |  29 | Woodard Collective   |   8 |            3
+ Artist         | 426 | Gina Livingston      |  22 |            3
+ Band           |  89 | Wood Collective      |  15 |            3
+ Artist         | 104 | morrisjohn           |  17 |            3
+ Artist         | 346 | alison37             |  23 |            3
+ Band           |  16 | Lane Collective      |   8 |            3
+ Artist         | 206 | Dana Gates           |  24 |            3
+ Band           |  12 | Mack Collective      |   2 |            3
+ Artist         | 825 | zsmith               |  28 |            3
+ Artist         | 976 | Terrance Brown       |  17 |            3
+ Band           |  70 | Rojas Collective     |  12 |            3
+ Artist         | 859 | forddavid            |  17 |            3
+ Artist         | 953 | Jessica Patton       |  16 |            3
+ Artist         | 989 | patriciaburns        |  23 |            3
+ Artist         | 140 | jacobsonwilliam      |  26 |            3
+ Artist         | 393 | Debra Rose           |  24 |            3
+ Artist         | 521 | adam63               |  29 |            3
+ Artist         | 632 | James Allen          |  15 |            3
+ Artist         | 907 | zmack                |  27 |            3
+ Band           |  60 | Lee Collective       |  19 |            3
+ Artist         | 548 | ocooper              |  26 |            3
+ Artist         | 238 | eadams               |  18 |            3
+ Artist         | 923 | umoore               |  16 |            3
+ Artist         | 527 | Sheena Bridges       |  17 |            3
+ Artist         | 549 | steven97             |  29 |            3
+ Artist         | 925 | Stacy Reed           |  28 |            3
+ Band           |   6 | Steele Collective    |  16 |            3
+ Artist         | 731 | Michael Reed         |  20 |            3
+ Artist         | 973 | lramirez             |  29 |            3
+ Artist         | 474 | Christine Wagner     |  25 |            2
+ Artist         | 404 | brownchad            |  29 |            2
+ Artist         | 974 | Anne Dodson          |  22 |            2
+ Artist         | 353 | fperez               |  20 |            2
+ Artist         | 730 | jacob49              |  16 |            2
+ Artist         | 182 | stevensholly         |  25 |            2
+ Artist         | 517 | benjamingriffin      |  24 |            2
+ Artist         | 153 | johnmurray           |  29 |            2
+ Artist         |  59 | Dan Cochran          |  24 |            2
+ Band           |  47 | Fisher Collective    |   3 |            2
+ Artist         | 324 | makaylamiller        |  27 |            2
+ Artist         | 204 | mcintoshrichard      |  18 |            2
+ Artist         | 587 | hartbrian            |  24 |            2
+ Artist         |  81 | Toni Davidson        |  24 |            2
+ Artist         | 440 | Jonathan Paul        |  18 |            2
+ Band           |  52 | Hess Collective      |   5 |            2
+ Band           |  84 | Ray Collective       |  13 |            2
+ Artist         | 184 | Pamela Hernandez     |  27 |            2
+ Artist         | 762 | David Johnson        |  25 |            2
+ Band           |  11 | Martin Collective    |  19 |            2
+ Artist         | 588 | Darius Hayes         |  26 |            2
+ Artist         | 165 | ldavis               |  28 |            2
+ Artist         | 447 | connortaylor         |  15 |            2
+ Artist         | 611 | Ricardo Figueroa     |  28 |            2
+ Artist         | 967 | Frederick Rodriguez  |  29 |            2
+ Artist         | 139 | John Jones           |  22 |            2
+ Artist         | 130 | Lisa Walter          |  19 |            2
+ Artist         | 609 | Alice Armstrong      |  27 |            2
+ Artist         | 455 | corey90              |  28 |            2
+ Artist         | 319 | achristian           |  27 |            2
+ Artist         | 125 | bmoore               |  27 |            2
+ Artist         | 430 | glendarodriguez      |  20 |            2
+ Artist         |  71 | jeffrey13            |  22 |            2
+ Artist         |  16 | amber58              |  22 |            2
+ Artist         | 318 | jtaylor              |  18 |            2
+ Artist         | 906 | johnbrooks           |  26 |            2
+ Artist         | 810 | Toni Lopez           |  24 |            2
+ Artist         | 240 | Brandy Williams      |  18 |            2
+ Artist         | 780 | tlester              |  23 |            2
+ Artist         | 342 | Robert Ferguson      |  16 |            2
+ Artist         | 350 | rbaker               |  27 |            2
+ Band           |   5 | Walker Collective    |   1 |            2
+ Artist         | 816 | tjones               |  25 |            2
+ Artist         | 533 | marshalleric         |  24 |            2
+ Artist         | 927 | Andrea Tucker        |  21 |            2
+ Artist         | 252 | kenneth00            |  28 |            2
+ Band           |  93 | Clark Collective     |   4 |            2
+ Artist         | 697 | John Nguyen          |  16 |            2
+ Artist         | 992 | Tracy Edwards        |  29 |            2
+ Band           |  78 | Payne Collective     |   6 |            2
+ Artist         |  82 | Andrea Murillo       |  16 |            2
+ Artist         | 233 | bradyrebecca         |  24 |            2
+ Band           |  71 | Hernandez Collective |   3 |            2
+ Artist         | 463 | William Neal         |  22 |            2
+ Artist         | 314 | Suzanne Martinez     |  17 |            2
+ Artist         |  83 | Jacqueline Golden    |  24 |            2
+ Artist         | 128 | nestes               |  21 |            2
+ Artist         | 325 | jacquelinewilliams   |  15 |            2
+ Artist         | 531 | swalker              |  24 |            2
+ Band           |  98 | Stephens Collective  |  12 |            2
+ Band           |  26 | Harris Collective    |   3 |            2
+ Band           |  77 | Jones Collective     |  13 |            2
+ Artist         | 307 | seth00               |  23 |            2
+ Artist         |  64 | david72              |  25 |            2
+ Artist         | 847 | Keith Evans          |  28 |            2
+ Artist         | 234 | danielsnatalie       |  28 |            2
+ Artist         | 591 | Laura Jones          |  23 |            2
+ Artist         | 155 | James Woods          |  29 |            2
+ Band           |  24 | Mendoza Collective   |   7 |            2
+ Artist         | 937 | steven56             |  22 |            2
+ Band           |  64 | Haynes Collective    |  11 |            2
+ Band           |  55 | Cardenas Collective  |  19 |            2
+ Artist         | 690 | davisdawn            |  15 |            1
+ Artist         | 882 | Douglas Edwards      |  15 |            1
+ Artist         | 786 | nunezamy             |  28 |            1
+ Artist         | 503 | allisonalvarez       |  22 |            1
+ Artist         |  91 | rwright              |  19 |            1
+ Artist         | 634 | gonzalesjose         |  25 |            1
+ Artist         | 388 | Debbie Scott         |  26 |            1
+ Artist         | 651 | justinhall           |  18 |            1
+ Artist         | 229 | evelyn79             |  25 |            1
+ Artist         | 377 | iwilliams            |  24 |            1
+ Artist         | 205 | Brenda Hayes         |  20 |            1
+ Artist         | 349 | Joseph Knight        |  25 |            1
+ Artist         | 157 | Rhonda Smith         |  24 |            1
+ Artist         | 485 | John Johnson         |  15 |            1
+ Artist         | 559 | Malik Scott          |  29 |            1
+ Artist         | 181 | Lori Cobb            |  24 |            1
+ Band           |  97 | Ferguson Collective  |   8 |            1
+ Artist         | 265 | juanbecker           |  22 |            1
+ Artist         |  22 | andrew06             |  29 |            1
+ Artist         | 813 | David Castillo       |  22 |            1
+ Artist         | 247 | bgarner              |  22 |            1
+ Artist         | 215 | teresasimon          |  21 |            1
+ Artist         | 518 | Courtney Bailey      |  29 |            1
+ Artist         | 390 | angela40             |  16 |            1
+ Band           |  68 | Obrien Collective    |  17 |            1
+ Artist         | 266 | Kelly Anderson       |  15 |            1
+ Artist         | 586 | Jeremy Rocha         |  19 |            1
+ Artist         | 709 | Jamie Higgins        |  17 |            1
+ Artist         | 147 | Chad Delacruz        |  15 |            1
+ Artist         | 178 | david15              |  27 |            1
+ Artist         | 881 | John Cruz            |  15 |            1
+ Artist         | 607 | santosmichelle       |  20 |            1
+ Artist         | 915 | sherry53             |  19 |            1
+ Artist         |  29 | williamwilliams      |  24 |            1
+ Artist         |  61 | Alexander Vazquez    |  22 |            1
+ Artist         | 270 | Mark Carlson         |  29 |            1
+ Artist         | 687 | Michael Hoffman      |  18 |            1
+ Artist         | 210 | Robert Lee           |  22 |            1
+ Artist         | 571 | Catherine Wiley      |  25 |            1
+ Artist         | 708 | lynchshelly          |  27 |            1
+ Artist         | 726 | hmckay               |  27 |            1
+ Band           |  13 | Robertson Collective |  12 |            1
+ Artist         | 142 | qsantiago            |  24 |            1
+ Artist         | 798 | Chad Foster          |  29 |            1
+ Artist         | 132 | Jessica Fisher       |  27 |            1
+ Artist         | 300 | anthony41            |  15 |            1
+ Artist         |  11 | Richard Castillo     |  29 |            1
+ Artist         | 733 | williamstaylor       |  21 |            1
+ Artist         | 843 | bernardbrian         |  23 |            1
+ Artist         | 183 | Joseph Booker        |  17 |            1
+ Artist         | 331 | Jeremy Lopez         |  29 |            1
+ Artist         | 782 | Troy Lawrence        |  17 |            1
+ Artist         | 659 | maryferrell          |  15 |            1
+ Artist         |   5 | Danny Ward           |  25 |            1
+ Artist         | 621 | William Hall         |  25 |            1
+ Artist         | 896 | Kelly Norris         |  22 |            1
+ Artist         | 362 | Bobby Martin         |  17 |            1
+ Artist         | 524 | Nancy Kim            |  29 |            1
+ Artist         | 820 | vanderson            |  18 |            1
+ Artist         | 795 | garciadevon          |  19 |            1
+ Artist         | 602 | lisadrake            |  20 |            1
+ Band           |  54 | Murray Collective    |   7 |            1
+ Artist         | 133 | michael74            |  21 |            1
+ Artist         | 940 | christinaholland     |  29 |            1
+ Artist         |  65 | Alexander Nicholson  |  21 |            1
+ Band           |  32 | Hatfield Collective  |   1 |            1
+ Artist         | 264 | bblackwell           |  17 |            1
+ Artist         | 296 | privera              |  16 |            1
+ Artist         |   4 | robertperez          |  20 |            1
+ Artist         |  93 | ryancollins          |  17 |            1
+ Artist         |  88 | hernandeztracy       |  25 |            1
+ Artist         | 418 | Gary Harvey          |  16 |            1
+ Artist         | 978 | jasonhernandez       |  26 |            1
+ Artist         | 892 | Daniel Moore         |  26 |            1
+ Artist         | 625 | mpratt               |  25 |            1
+ Artist         | 464 | russodeborah         |  28 |            1
+ Artist         | 322 | Paul Robinson        |  16 |            1
+ Artist         | 870 | parrishmichael       |  18 |            1
+ Artist         | 808 | uduffy               |  28 |            1
+ Band           |  48 | Khan Collective      |  17 |            1
+ Artist         | 781 | terrylisa            |  23 |            1
+ Artist         |  42 | christiecooper       |  16 |            1
+ Artist         | 368 | ovargas              |  24 |            1
+ Artist         | 900 | Angela Acevedo       |  22 |            1
+ Artist         | 158 | Shelly Dickerson     |  25 |            1
+ Artist         | 303 | jeffrey66            |  18 |            1
+ Artist         | 647 | Rebecca Diaz         |  15 |            1
+ Artist         |  66 | robert89             |  22 |            1
+ Artist         | 719 | contreraslogan       |  17 |            1
+ Artist         | 453 | lduncan              |  25 |            1
+ Artist         | 528 | George Bailey        |  29 |            1
+ Artist         | 224 | dmartinez            |  17 |            1
+ Artist         | 493 | Jennifer Barton      |  17 |            1
+ Artist         | 669 | Samantha Anderson    |  26 |            1
+(277 rows)
+

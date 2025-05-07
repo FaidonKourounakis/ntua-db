@@ -1,0 +1,9 @@
+ visitor_id |   visitor_name   | performer_type | performer_id |   performer_name   | rated 
+------------+------------------+----------------+--------------+--------------------+-------
+          9 | Lance Mclaughlin | Artist         |          175 | Thomas Watson      |  5.00
+          1 | Jeffrey Thompson | Artist         |          184 | Pamela Hernandez   |  5.00
+          1 | Jeffrey Thompson | Artist         |          138 | Anthony Johnson    |  5.00
+          8 | Alexis Lopez     | Band           |           44 | Jackson Collective |  5.00
+         11 | Samantha Gordon  | Artist         |          389 | ssolis             |  5.00
+(5 rows)
+

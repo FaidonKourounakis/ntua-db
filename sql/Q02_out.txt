@@ -1,0 +1,465 @@
+ performer_type | performer_id |    performer_name    | performed_on_target_year 
+----------------+--------------+----------------------+--------------------------
+ Artist         |            3 | Lindsey Davis        | No
+ Artist         |            6 | Robert Williams      | No
+ Artist         |            7 | hillamanda           | No
+ Artist         |            9 | ericrowland          | No
+ Artist         |           11 | Richard Castillo     | No
+ Artist         |           12 | uelliott             | No
+ Artist         |           13 | hawkinsashley        | No
+ Artist         |           16 | amber58              | No
+ Artist         |           18 | mmcdaniel            | No
+ Artist         |           24 | Victoria Parker      | No
+ Artist         |           25 | Eric Kelley          | No
+ Artist         |           29 | williamwilliams      | No
+ Artist         |           31 | Joseph Whitehead     | No
+ Artist         |           32 | iduncan              | No
+ Artist         |           33 | Brianna Horne        | Yes
+ Artist         |           35 | John Bartlett        | No
+ Artist         |           36 | lozanoanthony        | No
+ Artist         |           39 | Diane Robertson      | No
+ Artist         |           42 | christiecooper       | No
+ Artist         |           44 | sheilaanderson       | No
+ Artist         |           45 | William Scott        | No
+ Artist         |           47 | jimenezwilliam       | No
+ Artist         |           48 | landerson            | No
+ Artist         |           49 | edwinmurray          | No
+ Artist         |           51 | lmartin              | Yes
+ Artist         |           53 | carrtamara           | No
+ Artist         |           55 | nmoore               | No
+ Artist         |           57 | Lynn Taylor          | No
+ Artist         |           60 | Jennifer Barnes      | No
+ Artist         |           61 | Alexander Vazquez    | No
+ Artist         |           65 | Alexander Nicholson  | No
+ Artist         |           68 | johnsonjacob         | No
+ Artist         |           69 | ucordova             | Yes
+ Artist         |           72 | Tiffany Lloyd        | No
+ Artist         |           78 | Carolyn Jones        | No
+ Artist         |           81 | Toni Davidson        | No
+ Artist         |           82 | Andrea Murillo       | No
+ Artist         |           83 | Jacqueline Golden    | No
+ Artist         |           86 | Justin Humphrey      | No
+ Artist         |           94 | Daniel Cohen         | No
+ Artist         |          104 | morrisjohn           | No
+ Artist         |          105 | murraylori           | No
+ Artist         |          110 | martinalexandria     | No
+ Artist         |          113 | John Rodriguez       | No
+ Artist         |          115 | gina92               | No
+ Artist         |          118 | randall88            | No
+ Artist         |          120 | james25              | Yes
+ Artist         |          122 | johnnyleonard        | No
+ Artist         |          124 | torresjessica        | No
+ Artist         |          126 | jacksonmelissa       | No
+ Artist         |          128 | nestes               | No
+ Artist         |          133 | michael74            | No
+ Artist         |          135 | Leslie Murphy        | Yes
+ Artist         |          137 | rodriguezmegan       | No
+ Artist         |          138 | Anthony Johnson      | No
+ Artist         |          140 | jacobsonwilliam      | No
+ Artist         |          141 | Kelly Glover         | No
+ Artist         |          142 | qsantiago            | No
+ Artist         |          146 | Caroline Lopez       | No
+ Artist         |          147 | Chad Delacruz        | No
+ Artist         |          152 | Robert Graham        | No
+ Artist         |          153 | johnmurray           | No
+ Artist         |          156 | Andrew Mcgee         | Yes
+ Artist         |          157 | Rhonda Smith         | No
+ Artist         |          165 | ldavis               | No
+ Artist         |          166 | hjones               | No
+ Artist         |          173 | Lori Vaughn          | No
+ Artist         |          178 | david15              | No
+ Artist         |          179 | Jason Williams       | No
+ Artist         |          180 | Heidi Johnson        | No
+ Artist         |          181 | Lori Cobb            | No
+ Artist         |          182 | stevensholly         | No
+ Artist         |          184 | Pamela Hernandez     | No
+ Artist         |          185 | mark89               | Yes
+ Artist         |          186 | jacobsonholly        | No
+ Artist         |          190 | xbowen               | No
+ Artist         |          193 | barbarawalters       | No
+ Artist         |          196 | Connor Sparks        | No
+ Artist         |          205 | Brenda Hayes         | Yes
+ Artist         |          206 | Dana Gates           | No
+ Artist         |          207 | williamslisa         | No
+ Artist         |          208 | Robert Jordan        | Yes
+ Artist         |          210 | Robert Lee           | No
+ Artist         |          212 | swinters             | No
+ Artist         |          213 | Courtney Miller      | Yes
+ Artist         |          216 | Kenneth Moore        | No
+ Artist         |          218 | Melissa Williams     | No
+ Artist         |          220 | Stacie Wilson        | Yes
+ Artist         |          221 | jwilson              | No
+ Artist         |          226 | garystrong           | No
+ Artist         |          228 | margaretgarcia       | No
+ Artist         |          232 | Willie Burke         | No
+ Artist         |          233 | bradyrebecca         | No
+ Artist         |          238 | eadams               | No
+ Artist         |          241 | jbaker               | No
+ Artist         |          242 | ramosjohn            | No
+ Artist         |          243 | Christopher Simpson  | No
+ Artist         |          247 | bgarner              | No
+ Artist         |          249 | Claire Phillips      | No
+ Artist         |          251 | Adam Scott           | No
+ Artist         |          252 | kenneth00            | No
+ Artist         |          258 | Casey Perkins        | Yes
+ Artist         |          261 | vthompson            | No
+ Artist         |          263 | hray                 | No
+ Artist         |          264 | bblackwell           | Yes
+ Artist         |          265 | juanbecker           | No
+ Artist         |          266 | Kelly Anderson       | No
+ Artist         |          268 | Kristen Robinson     | No
+ Artist         |          269 | Brian Lawrence       | No
+ Artist         |          270 | Mark Carlson         | No
+ Artist         |          271 | ashley18             | No
+ Artist         |          274 | Brian Brooks         | No
+ Artist         |          278 | rlewis               | Yes
+ Artist         |          281 | Joan Chase           | No
+ Artist         |          284 | Catherine Wall       | No
+ Artist         |          290 | Reginald Garcia      | No
+ Artist         |          292 | Stacey Carter        | No
+ Artist         |          296 | privera              | No
+ Artist         |          297 | gina04               | No
+ Artist         |          298 | carolyncooper        | No
+ Artist         |          301 | Jason Carpenter      | No
+ Artist         |          302 | Brian Hall           | No
+ Artist         |          303 | jeffrey66            | No
+ Artist         |          304 | Tammy May            | No
+ Artist         |          307 | seth00               | No
+ Artist         |          308 | stonekathy           | No
+ Artist         |          309 | Robert Carey         | No
+ Artist         |          310 | Kevin Flores         | No
+ Artist         |          314 | Suzanne Martinez     | No
+ Artist         |          315 | Kevin Cook           | No
+ Artist         |          320 | christine55          | No
+ Artist         |          321 | Adam Hansen          | No
+ Artist         |          324 | makaylamiller        | No
+ Artist         |          325 | jacquelinewilliams   | No
+ Artist         |          328 | William Luna         | No
+ Artist         |          329 | gary69               | Yes
+ Artist         |          335 | fedwards             | No
+ Artist         |          336 | chavezcaitlin        | No
+ Artist         |          341 | allenmichael         | No
+ Artist         |          342 | Robert Ferguson      | Yes
+ Artist         |          345 | Nathan Anderson      | No
+ Artist         |          346 | alison37             | No
+ Artist         |          347 | Cynthia Higgins      | No
+ Artist         |          348 | Stanley Miller       | No
+ Artist         |          350 | rbaker               | No
+ Artist         |          352 | Amy Trujillo         | No
+ Artist         |          353 | fperez               | No
+ Artist         |          354 | paul76               | No
+ Artist         |          360 | ywilson              | No
+ Artist         |          362 | Bobby Martin         | No
+ Artist         |          368 | ovargas              | No
+ Artist         |          369 | jjohnson             | No
+ Artist         |          374 | lopezryan            | No
+ Artist         |          377 | iwilliams            | No
+ Artist         |          380 | Michael Bryant       | No
+ Artist         |          382 | Patricia Garcia      | Yes
+ Artist         |          384 | heather34            | No
+ Artist         |          388 | Debbie Scott         | No
+ Artist         |          390 | angela40             | No
+ Artist         |          391 | Rick Frank           | No
+ Artist         |          393 | Debra Rose           | Yes
+ Artist         |          394 | Alexis Gonzalez      | No
+ Artist         |          397 | thomas16             | Yes
+ Artist         |          399 | waltermorrison       | No
+ Artist         |          404 | brownchad            | No
+ Artist         |          406 | lisajones            | No
+ Artist         |          407 | James Norris         | Yes
+ Artist         |          412 | Cody Wright          | No
+ Artist         |          413 | paul41               | No
+ Artist         |          414 | georgechavez         | Yes
+ Artist         |          415 | gregorysoto          | Yes
+ Artist         |          419 | charlesescobar       | No
+ Artist         |          421 | thomasmallory        | No
+ Artist         |          423 | ujones               | No
+ Artist         |          426 | Gina Livingston      | No
+ Artist         |          427 | michaelpineda        | No
+ Artist         |          430 | glendarodriguez      | No
+ Artist         |          431 | Timothy Brown        | No
+ Artist         |          435 | pgardner             | No
+ Artist         |          436 | Cindy Harvey         | No
+ Artist         |          439 | Jason Smith          | No
+ Artist         |          440 | Jonathan Paul        | No
+ Artist         |          444 | natasha28            | No
+ Artist         |          446 | lewistammy           | No
+ Artist         |          452 | bobby42              | No
+ Artist         |          453 | lduncan              | No
+ Artist         |          455 | corey90              | No
+ Artist         |          457 | alexanderjacqueline  | No
+ Artist         |          461 | Terri Riley          | No
+ Artist         |          466 | Timothy Green        | Yes
+ Artist         |          468 | David Morris         | No
+ Artist         |          470 | shannon58            | No
+ Artist         |          473 | Travis Oneal         | No
+ Artist         |          474 | Christine Wagner     | No
+ Artist         |          477 | Kevin Perkins        | No
+ Artist         |          480 | brandyvasquez        | No
+ Artist         |          481 | Julia Washington     | No
+ Artist         |          482 | Brenda Hill          | No
+ Artist         |          491 | Robert Sanchez       | No
+ Artist         |          499 | nicholashenderson    | No
+ Artist         |          501 | Lisa White           | No
+ Artist         |          503 | allisonalvarez       | No
+ Artist         |          505 | Matthew Jackson      | No
+ Artist         |          513 | andrewskristi        | No
+ Artist         |          515 | kevinwalker          | No
+ Artist         |          516 | santanaamy           | No
+ Artist         |          520 | zgarza               | No
+ Artist         |          521 | adam63               | Yes
+ Artist         |          524 | Nancy Kim            | No
+ Artist         |          525 | Madison Silva        | No
+ Artist         |          527 | Sheena Bridges       | No
+ Artist         |          528 | George Bailey        | No
+ Artist         |          531 | swalker              | No
+ Artist         |          533 | marshalleric         | Yes
+ Artist         |          536 | msandoval            | Yes
+ Artist         |          537 | Angelica Roberson    | No
+ Artist         |          543 | John Yang            | No
+ Artist         |          549 | steven97             | Yes
+ Artist         |          552 | Albert Ortega        | No
+ Artist         |          553 | Sharon Martinez      | No
+ Artist         |          557 | catherine65          | No
+ Artist         |          559 | Malik Scott          | No
+ Artist         |          561 | rodriguezdavid       | No
+ Artist         |          567 | Craig Barrera        | No
+ Artist         |          569 | Eric Patterson       | No
+ Artist         |          577 | Justin Stone         | No
+ Artist         |          583 | qwalker              | No
+ Artist         |          587 | hartbrian            | No
+ Artist         |          588 | Darius Hayes         | No
+ Artist         |          591 | Laura Jones          | No
+ Artist         |          592 | ireynolds            | No
+ Artist         |          593 | Tammy Sellers        | No
+ Artist         |          595 | danielsjohn          | No
+ Artist         |          599 | stanleyalexander     | No
+ Artist         |          603 | Kelly Ritter         | No
+ Artist         |          611 | Ricardo Figueroa     | No
+ Artist         |          613 | Thomas Avila         | No
+ Artist         |          614 | Emily Spencer        | No
+ Artist         |          616 | Juan Miller          | No
+ Artist         |          619 | Mallory Rivera       | No
+ Artist         |          622 | curtis14             | No
+ Artist         |          625 | mpratt               | No
+ Artist         |          627 | Elizabeth Morgan     | No
+ Artist         |          632 | James Allen          | No
+ Artist         |          635 | melissashaw          | No
+ Artist         |          636 | Christian Perkins    | No
+ Artist         |          638 | Eugene Allen         | No
+ Artist         |          639 | kathrynstevens       | No
+ Artist         |          641 | smitholivia          | No
+ Artist         |          642 | Bryan Reynolds       | No
+ Artist         |          645 | dboyd                | No
+ Artist         |          646 | bthompson            | No
+ Artist         |          647 | Rebecca Diaz         | No
+ Artist         |          648 | yhughes              | No
+ Artist         |          653 | Emily Wood           | No
+ Artist         |          658 | Jennifer Galloway    | No
+ Artist         |          661 | amberhahn            | No
+ Artist         |          663 | Taylor Mitchell      | No
+ Artist         |          665 | melissa20            | No
+ Artist         |          668 | Tamara Carter        | No
+ Artist         |          671 | Christina Mccormick  | Yes
+ Artist         |          672 | amandareyes          | No
+ Artist         |          673 | santosjoel           | No
+ Artist         |          680 | lauramendez          | No
+ Artist         |          687 | Michael Hoffman      | Yes
+ Artist         |          690 | davisdawn            | No
+ Artist         |          691 | Susan Rios           | No
+ Artist         |          697 | John Nguyen          | No
+ Artist         |          700 | gibsonethan          | No
+ Artist         |          701 | vaughnellen          | No
+ Artist         |          702 | Anthony Berger       | No
+ Artist         |          708 | lynchshelly          | No
+ Artist         |          709 | Jamie Higgins        | No
+ Artist         |          711 | Martha Carter        | Yes
+ Artist         |          712 | Connie Morris        | Yes
+ Artist         |          713 | Christopher Young    | No
+ Artist         |          714 | jacksondennis        | No
+ Artist         |          716 | martinezjanet        | No
+ Artist         |          717 | Jamie Price          | No
+ Artist         |          719 | contreraslogan       | No
+ Artist         |          720 | Jeremy Gonzalez      | Yes
+ Artist         |          723 | Lisa Singh           | No
+ Artist         |          729 | hmartin              | No
+ Artist         |          730 | jacob49              | No
+ Artist         |          731 | Michael Reed         | No
+ Artist         |          733 | williamstaylor       | No
+ Artist         |          737 | diamondpadilla       | No
+ Artist         |          741 | bruce21              | No
+ Artist         |          743 | Kristin Smith        | Yes
+ Artist         |          746 | Maria Black          | Yes
+ Artist         |          748 | osmith               | No
+ Artist         |          758 | jillgallagher        | No
+ Artist         |          759 | johngray             | No
+ Artist         |          761 | Timothy Lane         | No
+ Artist         |          762 | David Johnson        | No
+ Artist         |          764 | griffithangela       | Yes
+ Artist         |          766 | amanda70             | No
+ Artist         |          767 | michaelgilbert       | No
+ Artist         |          768 | Barry Page           | No
+ Artist         |          769 | Guy Brewer           | No
+ Artist         |          770 | Eric Warner          | No
+ Artist         |          771 | monica66             | No
+ Artist         |          775 | Michelle Martin      | Yes
+ Artist         |          776 | xcruz                | No
+ Artist         |          778 | Ashley Sanders       | Yes
+ Artist         |          780 | tlester              | No
+ Artist         |          781 | terrylisa            | Yes
+ Artist         |          783 | Bradley Peters       | No
+ Artist         |          786 | nunezamy             | No
+ Artist         |          788 | Vicki Jordan         | No
+ Artist         |          794 | fosterbradley        | No
+ Artist         |          798 | Chad Foster          | No
+ Artist         |          800 | stevenquinn          | Yes
+ Artist         |          802 | Phillip Saunders     | No
+ Artist         |          804 | Sarah Evans          | No
+ Artist         |          806 | dawn81               | No
+ Artist         |          807 | Charles Quinn        | No
+ Artist         |          809 | Travis Stewart       | No
+ Artist         |          811 | qstanley             | No
+ Artist         |          812 | Megan Taylor         | No
+ Artist         |          816 | tjones               | No
+ Artist         |          818 | Gabriel Sanders      | No
+ Artist         |          820 | vanderson            | No
+ Artist         |          821 | chavezpamela         | No
+ Artist         |          823 | Sharon Jackson       | No
+ Artist         |          825 | zsmith               | No
+ Artist         |          827 | Angela Reyes         | No
+ Artist         |          829 | edward99             | No
+ Artist         |          834 | Mary Stone           | Yes
+ Artist         |          839 | heathelizabeth       | No
+ Artist         |          843 | bernardbrian         | No
+ Artist         |          846 | lisa16               | No
+ Artist         |          848 | Matthew Lee          | No
+ Artist         |          849 | michaelpacheco       | No
+ Artist         |          855 | elizabethblack       | No
+ Artist         |          859 | forddavid            | Yes
+ Artist         |          863 | andersondonna        | No
+ Artist         |          865 | Debbie Palmer        | No
+ Artist         |          866 | middletondavid       | No
+ Artist         |          869 | mathew63             | Yes
+ Artist         |          870 | parrishmichael       | No
+ Artist         |          873 | mashley              | No
+ Artist         |          874 | julieconley          | No
+ Artist         |          881 | John Cruz            | No
+ Artist         |          882 | Douglas Edwards      | No
+ Artist         |          887 | rangeljamie          | Yes
+ Artist         |          888 | Joseph Lambert       | Yes
+ Artist         |          889 | jonathancombs        | Yes
+ Artist         |          891 | xcrane               | No
+ Artist         |          892 | Daniel Moore         | No
+ Artist         |          893 | markbrown            | Yes
+ Artist         |          894 | Christopher Knight   | No
+ Artist         |          895 | brian00              | No
+ Artist         |          897 | Roger Higgins        | No
+ Artist         |          901 | Daniel Lee           | Yes
+ Artist         |          902 | jillianjones         | No
+ Artist         |          907 | zmack                | No
+ Artist         |          913 | dunnjulian           | No
+ Artist         |          923 | umoore               | Yes
+ Artist         |          925 | Stacy Reed           | No
+ Artist         |          927 | Andrea Tucker        | No
+ Artist         |          928 | katherine83          | Yes
+ Artist         |          929 | cobbjeffrey          | Yes
+ Artist         |          930 | Shannon Evans        | No
+ Artist         |          932 | Samantha Bradley     | No
+ Artist         |          933 | robinsonkaitlin      | No
+ Artist         |          934 | Ricardo Turner       | No
+ Artist         |          936 | Chloe Humphrey       | No
+ Artist         |          937 | steven56             | No
+ Artist         |          938 | Anthony Palmer       | Yes
+ Artist         |          940 | christinaholland     | No
+ Artist         |          941 | igarcia              | No
+ Artist         |          944 | hutchinsonmelissa    | Yes
+ Artist         |          945 | Eric Hall            | No
+ Artist         |          948 | Joyce Lambert        | No
+ Artist         |          952 | Kenneth Harvey       | No
+ Artist         |          960 | zwong                | No
+ Artist         |          962 | Julie Jordan         | No
+ Artist         |          963 | Michael Adams        | No
+ Artist         |          967 | Frederick Rodriguez  | Yes
+ Artist         |          969 | Kristi Long          | No
+ Artist         |          973 | lramirez             | No
+ Artist         |          976 | Terrance Brown       | No
+ Artist         |          977 | Jennifer Wilson      | No
+ Artist         |          978 | jasonhernandez       | No
+ Artist         |          982 | michaellarson        | No
+ Artist         |          983 | Amy Mcconnell        | No
+ Artist         |          985 | lisa32               | No
+ Artist         |          987 | Michael Smith        | No
+ Artist         |          990 | cfields              | No
+ Artist         |          991 | christopher07        | No
+ Artist         |          992 | Tracy Edwards        | No
+ Artist         |          995 | Mike Spencer         | No
+ Artist         |          998 | ashley32             | No
+ Artist         |          999 | Laura Williams       | No
+ Band           |            1 | Gonzalez Collective  | No
+ Band           |            3 | Calderon Collective  | No
+ Band           |            4 | Rogers Collective    | No
+ Band           |            6 | Steele Collective    | No
+ Band           |            7 | Bishop Collective    | No
+ Band           |            8 | Smith Collective     | No
+ Band           |            9 | Sharp Collective     | No
+ Band           |           10 | Murphy Collective    | Yes
+ Band           |           11 | Martin Collective    | Yes
+ Band           |           14 | Owens Collective     | No
+ Band           |           16 | Lane Collective      | No
+ Band           |           18 | Vasquez Collective   | No
+ Band           |           20 | Mcdonald Collective  | No
+ Band           |           21 | Price Collective     | No
+ Band           |           22 | Mitchell Collective  | No
+ Band           |           23 | Padilla Collective   | Yes
+ Band           |           24 | Mendoza Collective   | No
+ Band           |           25 | Horne Collective     | Yes
+ Band           |           27 | Hayden Collective    | No
+ Band           |           28 | Jones Collective     | No
+ Band           |           30 | Welch Collective     | Yes
+ Band           |           31 | Johnston Collective  | No
+ Band           |           32 | Hatfield Collective  | No
+ Band           |           35 | Bowman Collective    | No
+ Band           |           36 | Martinez Collective  | No
+ Band           |           37 | Smith Collective     | No
+ Band           |           38 | Velazquez Collective | No
+ Band           |           40 | Evans Collective     | No
+ Band           |           41 | Thompson Collective  | No
+ Band           |           42 | Pittman Collective   | No
+ Band           |           43 | Jones Collective     | No
+ Band           |           44 | Jackson Collective   | Yes
+ Band           |           46 | Long Collective      | Yes
+ Band           |           47 | Fisher Collective    | No
+ Band           |           48 | Khan Collective      | No
+ Band           |           49 | Ortega Collective    | No
+ Band           |           50 | Wiley Collective     | No
+ Band           |           52 | Hess Collective      | No
+ Band           |           57 | Lowe Collective      | No
+ Band           |           58 | Todd Collective      | No
+ Band           |           59 | Kelley Collective    | No
+ Band           |           60 | Lee Collective       | No
+ Band           |           62 | Harris Collective    | No
+ Band           |           63 | Hogan Collective     | No
+ Band           |           65 | Schmidt Collective   | No
+ Band           |           66 | Jones Collective     | No
+ Band           |           67 | Rios Collective      | No
+ Band           |           69 | Nichols Collective   | No
+ Band           |           71 | Hernandez Collective | No
+ Band           |           72 | Garner Collective    | No
+ Band           |           74 | Noble Collective     | No
+ Band           |           75 | Graham Collective    | No
+ Band           |           78 | Payne Collective     | No
+ Band           |           81 | Stevenson Collective | No
+ Band           |           82 | James Collective     | No
+ Band           |           85 | Williams Collective  | No
+ Band           |           86 | Kim Collective       | No
+ Band           |           87 | Parks Collective     | No
+ Band           |           89 | Wood Collective      | No
+ Band           |           92 | Williams Collective  | No
+ Band           |           94 | Henderson Collective | No
+ Band           |           95 | Williams Collective  | No
+ Band           |           96 | Meza Collective      | No
+ Band           |           97 | Ferguson Collective  | No
+ Band           |           98 | Stephens Collective  | No
+ Band           |           99 | Martin Collective    | Yes
+(461 rows)
+
