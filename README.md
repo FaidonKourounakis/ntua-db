@@ -74,8 +74,7 @@ The file `sql/load.sql` was too large to include on the [repository](https://git
 - At most one rating per visitor per performance
 - Only visitors which attended a performance can create ratings (having used tickets)
 
-## Tables/Entities (Rough sketch, see sql/install.sql or diagrams/relational.pdf for the entire schema)
-# Database Schema Documentation
+## Table (Rough sketch, see sql/install.sql or diagrams/relational.pdf for the entire schema)
 
 ### Lookup Tables (ID + Name)
 - **Continent**  
