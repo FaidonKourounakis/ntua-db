@@ -6,6 +6,7 @@ SELECT
 FROM event
 JOIN stage USING (stage_id)
 GROUP BY event.date_time::DATE
+ORDER BY day DESC
 
 
 -- The above calculates the required personnel for everyday of the festival,
