@@ -71,35 +71,35 @@ SET
 SET
                                                                         QUERY PLAN                                                                        
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=855.28..859.65 rows=50 width=68) (actual time=1.088..1.199 rows=57 loops=1)
+ GroupAggregate  (cost=855.28..859.65 rows=50 width=68) (actual time=1.272..1.335 rows=57 loops=1)
    Group Key: ticket.event_id
-   ->  Sort  (cost=855.28..855.60 rows=131 width=40) (actual time=1.072..1.082 rows=148 loops=1)
+   ->  Sort  (cost=855.28..855.60 rows=131 width=40) (actual time=1.262..1.269 rows=148 loops=1)
          Sort Key: ticket.event_id
          Sort Method: quicksort  Memory: 32kB
-         ->  Nested Loop Left Join  (cost=14.77..850.67 rows=131 width=40) (actual time=0.106..1.009 rows=148 loops=1)
+         ->  Nested Loop Left Join  (cost=14.77..850.67 rows=131 width=40) (actual time=0.554..1.210 rows=148 loops=1)
                Join Filter: (performance.performance_id = rating.performance_id)
                Rows Removed by Join Filter: 2493
-               ->  Nested Loop  (cost=10.22..753.56 rows=131 width=38) (actual time=0.061..0.495 rows=148 loops=1)
+               ->  Nested Loop  (cost=10.22..753.56 rows=131 width=38) (actual time=0.526..0.878 rows=148 loops=1)
                      Join Filter: (ticket.event_id = performance.event_id)
-                     ->  Nested Loop  (cost=9.88..524.23 rows=52 width=38) (actual time=0.053..0.318 rows=57 loops=1)
-                           ->  Nested Loop  (cost=9.28..292.61 rows=52 width=8) (actual time=0.042..0.149 rows=57 loops=1)
-                                 ->  Bitmap Heap Scan on visitor  (cost=4.30..8.31 rows=1 width=4) (actual time=0.011..0.012 rows=1 loops=1)
+                     ->  Nested Loop  (cost=9.88..524.23 rows=52 width=38) (actual time=0.519..0.719 rows=57 loops=1)
+                           ->  Nested Loop  (cost=9.28..292.61 rows=52 width=8) (actual time=0.494..0.562 rows=57 loops=1)
+                                 ->  Bitmap Heap Scan on visitor  (cost=4.30..8.31 rows=1 width=4) (actual time=0.460..0.461 rows=1 loops=1)
                                        Recheck Cond: (visitor_id = 1234)
                                        Heap Blocks: exact=1
-                                       ->  Bitmap Index Scan on visitor_pkey  (cost=0.00..4.30 rows=1 width=0) (actual time=0.005..0.005 rows=1 loops=1)
+                                       ->  Bitmap Index Scan on visitor_pkey  (cost=0.00..4.30 rows=1 width=0) (actual time=0.004..0.004 rows=1 loops=1)
                                              Index Cond: (visitor_id = 1234)
-                                 ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.028..0.128 rows=57 loops=1)
+                                 ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.031..0.093 rows=57 loops=1)
                                        Recheck Cond: (visitor_id = 1234)
                                        Filter: used
                                        Rows Removed by Filter: 20
                                        Heap Blocks: exact=77
-                                       ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.014..0.015 rows=77 loops=1)
+                                       ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.018..0.018 rows=77 loops=1)
                                              Index Cond: (visitor_id = 1234)
-                           ->  Memoize  (cost=0.60..4.61 rows=1 width=30) (actual time=0.003..0.003 rows=1 loops=57)
+                           ->  Memoize  (cost=0.60..4.61 rows=1 width=30) (actual time=0.002..0.002 rows=1 loops=57)
                                  Cache Key: ticket.event_id
                                  Cache Mode: logical
                                  Hits: 0  Misses: 57  Evictions: 0  Overflows: 0  Memory Usage: 8kB
-                                 ->  Bitmap Heap Scan on event  (cost=0.59..4.60 rows=1 width=30) (actual time=0.002..0.002 rows=1 loops=57)
+                                 ->  Bitmap Heap Scan on event  (cost=0.59..4.60 rows=1 width=30) (actual time=0.001..0.001 rows=1 loops=57)
                                        Recheck Cond: (ticket.event_id = event_id)
                                        Heap Blocks: exact=57
                                        ->  Bitmap Index Scan on event_pkey  (cost=0.00..0.59 rows=1 width=0) (actual time=0.001..0.001 rows=1 loops=57)
@@ -110,13 +110,13 @@ SET
                            ->  Bitmap Index Scan on idx_performance_event_id  (cost=0.00..0.33 rows=3 width=0) (actual time=0.001..0.001 rows=3 loops=57)
                                  Index Cond: (event_id = event.event_id)
                ->  Materialize  (cost=4.55..65.71 rows=16 width=18) (actual time=0.000..0.001 rows=17 loops=148)
-                     ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.019..0.042 rows=18 loops=1)
+                     ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.013..0.040 rows=18 loops=1)
                            Recheck Cond: (visitor_id = 1234)
                            Heap Blocks: exact=18
-                           ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.015..0.015 rows=18 loops=1)
+                           ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.009..0.010 rows=18 loops=1)
                                  Index Cond: (visitor_id = 1234)
- Planning Time: 0.587 ms
- Execution Time: 1.326 ms
+ Planning Time: 0.519 ms
+ Execution Time: 1.434 ms
 (46 rows)
 
         Combination 2         
@@ -128,46 +128,46 @@ SET
 SET
                                                                            QUERY PLAN                                                                           
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=10000000418.31..10000000422.68 rows=50 width=68) (actual time=0.988..1.077 rows=57 loops=1)
+ GroupAggregate  (cost=10000000418.31..10000000422.68 rows=50 width=68) (actual time=0.659..0.734 rows=57 loops=1)
    Group Key: ticket.event_id
-   ->  Sort  (cost=10000000418.31..10000000418.64 rows=131 width=40) (actual time=0.971..0.982 rows=148 loops=1)
+   ->  Sort  (cost=10000000418.31..10000000418.64 rows=131 width=40) (actual time=0.649..0.659 rows=148 loops=1)
          Sort Key: ticket.event_id
          Sort Method: quicksort  Memory: 32kB
-         ->  Hash Left Join  (cost=10000000374.60..10000000413.70 rows=131 width=40) (actual time=0.545..0.933 rows=148 loops=1)
+         ->  Hash Left Join  (cost=10000000374.60..10000000413.70 rows=131 width=40) (actual time=0.345..0.622 rows=148 loops=1)
                Hash Cond: (performance.performance_id = rating.performance_id)
-               ->  Hash Join  (cost=10000000308.78..10000000347.53 rows=131 width=38) (actual time=0.445..0.805 rows=148 loops=1)
+               ->  Hash Join  (cost=10000000308.78..10000000347.53 rows=131 width=38) (actual time=0.291..0.549 rows=148 loops=1)
                      Hash Cond: (ticket.event_id = event.event_id)
-                     ->  Nested Loop  (cost=10000000288.73..10000000327.14 rows=131 width=16) (actual time=0.221..0.544 rows=148 loops=1)
-                           ->  Hash Join  (cost=284.43..317.19 rows=131 width=16) (actual time=0.203..0.477 rows=148 loops=1)
+                     ->  Nested Loop  (cost=10000000288.73..10000000327.14 rows=131 width=16) (actual time=0.108..0.342 rows=148 loops=1)
+                           ->  Hash Join  (cost=284.43..317.19 rows=131 width=16) (actual time=0.098..0.298 rows=148 loops=1)
                                  Hash Cond: (performance.event_id = ticket.event_id)
-                                 ->  Seq Scan on performance  (cost=0.00..28.83 rows=1483 width=8) (actual time=0.008..0.121 rows=1483 loops=1)
-                                 ->  Hash  (cost=283.78..283.78 rows=52 width=8) (actual time=0.187..0.188 rows=57 loops=1)
+                                 ->  Seq Scan on performance  (cost=0.00..28.83 rows=1483 width=8) (actual time=0.005..0.084 rows=1483 loops=1)
+                                 ->  Hash  (cost=283.78..283.78 rows=52 width=8) (actual time=0.089..0.089 rows=57 loops=1)
                                        Buckets: 1024  Batches: 1  Memory Usage: 11kB
-                                       ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.034..0.173 rows=57 loops=1)
+                                       ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.022..0.081 rows=57 loops=1)
                                              Recheck Cond: (visitor_id = 1234)
                                              Filter: used
                                              Rows Removed by Filter: 20
                                              Heap Blocks: exact=77
-                                             ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.017..0.017 rows=77 loops=1)
+                                             ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.012..0.012 rows=77 loops=1)
                                                    Index Cond: (visitor_id = 1234)
                            ->  Materialize  (cost=4.30..8.32 rows=1 width=4) (actual time=0.000..0.000 rows=1 loops=148)
-                                 ->  Bitmap Heap Scan on visitor  (cost=4.30..8.31 rows=1 width=4) (actual time=0.009..0.010 rows=1 loops=1)
+                                 ->  Bitmap Heap Scan on visitor  (cost=4.30..8.31 rows=1 width=4) (actual time=0.005..0.006 rows=1 loops=1)
                                        Recheck Cond: (visitor_id = 1234)
                                        Heap Blocks: exact=1
-                                       ->  Bitmap Index Scan on visitor_pkey  (cost=0.00..4.30 rows=1 width=0) (actual time=0.006..0.006 rows=1 loops=1)
+                                       ->  Bitmap Index Scan on visitor_pkey  (cost=0.00..4.30 rows=1 width=0) (actual time=0.003..0.003 rows=1 loops=1)
                                              Index Cond: (visitor_id = 1234)
-                     ->  Hash  (cost=12.80..12.80 rows=580 width=30) (actual time=0.216..0.216 rows=580 loops=1)
+                     ->  Hash  (cost=12.80..12.80 rows=580 width=30) (actual time=0.177..0.177 rows=580 loops=1)
                            Buckets: 1024  Batches: 1  Memory Usage: 45kB
-                           ->  Seq Scan on event  (cost=0.00..12.80 rows=580 width=30) (actual time=0.021..0.103 rows=580 loops=1)
-               ->  Hash  (cost=65.63..65.63 rows=16 width=18) (actual time=0.073..0.074 rows=18 loops=1)
+                           ->  Seq Scan on event  (cost=0.00..12.80 rows=580 width=30) (actual time=0.010..0.062 rows=580 loops=1)
+               ->  Hash  (cost=65.63..65.63 rows=16 width=18) (actual time=0.037..0.037 rows=18 loops=1)
                      Buckets: 1024  Batches: 1  Memory Usage: 9kB
-                     ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.023..0.061 rows=18 loops=1)
+                     ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.013..0.030 rows=18 loops=1)
                            Recheck Cond: (visitor_id = 1234)
                            Heap Blocks: exact=18
-                           ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.014..0.014 rows=18 loops=1)
+                           ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.008..0.008 rows=18 loops=1)
                                  Index Cond: (visitor_id = 1234)
- Planning Time: 0.734 ms
- Execution Time: 1.203 ms
+ Planning Time: 0.589 ms
+ Execution Time: 0.914 ms
 (40 rows)
 
          Combination 3         
@@ -179,51 +179,51 @@ SET
 SET
                                                                           QUERY PLAN                                                                           
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=10000000606.48..10000000624.04 rows=50 width=68) (actual time=1.683..2.015 rows=57 loops=1)
+ GroupAggregate  (cost=10000000606.48..10000000624.04 rows=50 width=68) (actual time=0.933..1.155 rows=57 loops=1)
    Group Key: ticket.event_id
-   ->  Merge Join  (cost=10000000606.48..10000000620.00 rows=131 width=40) (actual time=1.656..1.918 rows=148 loops=1)
+   ->  Merge Join  (cost=10000000606.48..10000000620.00 rows=131 width=40) (actual time=0.924..1.099 rows=148 loops=1)
          Merge Cond: (ticket.event_id = event.event_id)
-         ->  Merge Join  (cost=10000000567.06..10000000576.04 rows=131 width=18) (actual time=1.431..1.612 rows=148 loops=1)
+         ->  Merge Join  (cost=10000000567.06..10000000576.04 rows=131 width=18) (actual time=0.785..0.904 rows=148 loops=1)
                Merge Cond: (performance.event_id = ticket.event_id)
-               ->  Sort  (cost=10000000281.80..10000000285.51 rows=1483 width=18) (actual time=1.211..1.274 rows=1197 loops=1)
+               ->  Sort  (cost=10000000281.80..10000000285.51 rows=1483 width=18) (actual time=0.709..0.748 rows=1197 loops=1)
                      Sort Key: performance.event_id
                      Sort Method: quicksort  Memory: 84kB
-                     ->  Merge Left Join  (cost=10000000196.03..10000000203.69 rows=1483 width=18) (actual time=0.597..0.920 rows=1483 loops=1)
+                     ->  Merge Left Join  (cost=10000000196.03..10000000203.69 rows=1483 width=18) (actual time=0.341..0.542 rows=1483 loops=1)
                            Merge Cond: (performance.performance_id = rating.performance_id)
-                           ->  Sort  (cost=10000000130.08..10000000133.79 rows=1483 width=12) (actual time=0.540..0.623 rows=1483 loops=1)
+                           ->  Sort  (cost=10000000130.08..10000000133.79 rows=1483 width=12) (actual time=0.311..0.360 rows=1483 loops=1)
                                  Sort Key: performance.performance_id
                                  Sort Method: quicksort  Memory: 95kB
-                                 ->  Nested Loop  (cost=10000000004.30..10000000051.97 rows=1483 width=12) (actual time=0.048..0.353 rows=1483 loops=1)
-                                       ->  Bitmap Heap Scan on visitor  (cost=4.30..8.31 rows=1 width=4) (actual time=0.035..0.037 rows=1 loops=1)
+                                 ->  Nested Loop  (cost=10000000004.30..10000000051.97 rows=1483 width=12) (actual time=0.012..0.195 rows=1483 loops=1)
+                                       ->  Bitmap Heap Scan on visitor  (cost=4.30..8.31 rows=1 width=4) (actual time=0.008..0.009 rows=1 loops=1)
                                              Recheck Cond: (visitor_id = 1234)
                                              Heap Blocks: exact=1
-                                             ->  Bitmap Index Scan on visitor_pkey  (cost=0.00..4.30 rows=1 width=0) (actual time=0.010..0.011 rows=1 loops=1)
+                                             ->  Bitmap Index Scan on visitor_pkey  (cost=0.00..4.30 rows=1 width=0) (actual time=0.005..0.005 rows=1 loops=1)
                                                    Index Cond: (visitor_id = 1234)
-                                       ->  Seq Scan on performance  (cost=0.00..28.83 rows=1483 width=8) (actual time=0.007..0.113 rows=1483 loops=1)
-                           ->  Sort  (cost=65.95..65.99 rows=16 width=18) (actual time=0.052..0.054 rows=18 loops=1)
+                                       ->  Seq Scan on performance  (cost=0.00..28.83 rows=1483 width=8) (actual time=0.003..0.071 rows=1483 loops=1)
+                           ->  Sort  (cost=65.95..65.99 rows=16 width=18) (actual time=0.028..0.029 rows=18 loops=1)
                                  Sort Key: rating.performance_id
                                  Sort Method: quicksort  Memory: 25kB
-                                 ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.019..0.045 rows=18 loops=1)
+                                 ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.009..0.024 rows=18 loops=1)
                                        Recheck Cond: (visitor_id = 1234)
                                        Heap Blocks: exact=18
-                                       ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.011..0.011 rows=18 loops=1)
+                                       ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.005..0.005 rows=18 loops=1)
                                              Index Cond: (visitor_id = 1234)
-               ->  Sort  (cost=285.26..285.39 rows=52 width=8) (actual time=0.211..0.214 rows=57 loops=1)
+               ->  Sort  (cost=285.26..285.39 rows=52 width=8) (actual time=0.075..0.077 rows=57 loops=1)
                      Sort Key: ticket.event_id
                      Sort Method: quicksort  Memory: 26kB
-                     ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.044..0.198 rows=57 loops=1)
+                     ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.018..0.068 rows=57 loops=1)
                            Recheck Cond: (visitor_id = 1234)
                            Filter: used
                            Rows Removed by Filter: 20
                            Heap Blocks: exact=77
-                           ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.025..0.026 rows=77 loops=1)
+                           ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.010..0.010 rows=77 loops=1)
                                  Index Cond: (visitor_id = 1234)
-         ->  Sort  (cost=39.42..40.87 rows=580 width=30) (actual time=0.220..0.241 rows=460 loops=1)
+         ->  Sort  (cost=39.42..40.87 rows=580 width=30) (actual time=0.137..0.151 rows=460 loops=1)
                Sort Key: event.event_id
                Sort Method: quicksort  Memory: 53kB
-               ->  Seq Scan on event  (cost=0.00..12.80 rows=580 width=30) (actual time=0.013..0.103 rows=580 loops=1)
- Planning Time: 1.113 ms
- Execution Time: 2.112 ms
+               ->  Seq Scan on event  (cost=0.00..12.80 rows=580 width=30) (actual time=0.025..0.069 rows=580 loops=1)
+ Planning Time: 0.631 ms
+ Execution Time: 1.197 ms
 (45 rows)
 
             Combination 4             
@@ -237,42 +237,42 @@ SET
 SET
                                                                        QUERY PLAN                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
- HashAggregate  (cost=472.20..473.95 rows=50 width=68) (actual time=1.380..1.428 rows=57 loops=1)
+ HashAggregate  (cost=472.20..473.95 rows=50 width=68) (actual time=0.582..0.612 rows=57 loops=1)
    Group Key: ticket.event_id
    Batches: 1  Memory Usage: 88kB
-   ->  Nested Loop Left Join  (cost=10.38..469.91 rows=131 width=40) (actual time=0.097..1.282 rows=148 loops=1)
+   ->  Nested Loop Left Join  (cost=10.38..469.91 rows=131 width=40) (actual time=0.043..0.541 rows=148 loops=1)
          Join Filter: (performance.performance_id = rating.performance_id)
          Rows Removed by Join Filter: 2493
-         ->  Nested Loop  (cost=5.84..372.80 rows=131 width=38) (actual time=0.075..0.567 rows=148 loops=1)
+         ->  Nested Loop  (cost=5.84..372.80 rows=131 width=38) (actual time=0.032..0.263 rows=148 loops=1)
                Join Filter: (ticket.event_id = performance.event_id)
-               ->  Nested Loop  (cost=5.56..346.88 rows=52 width=38) (actual time=0.068..0.388 rows=57 loops=1)
-                     ->  Nested Loop  (cost=5.27..288.60 rows=52 width=8) (actual time=0.051..0.171 rows=57 loops=1)
-                           ->  Index Only Scan using visitor_pkey on visitor  (cost=0.29..4.31 rows=1 width=4) (actual time=0.014..0.015 rows=1 loops=1)
+               ->  Nested Loop  (cost=5.56..346.88 rows=52 width=38) (actual time=0.029..0.169 rows=57 loops=1)
+                     ->  Nested Loop  (cost=5.27..288.60 rows=52 width=8) (actual time=0.021..0.073 rows=57 loops=1)
+                           ->  Index Only Scan using visitor_pkey on visitor  (cost=0.29..4.31 rows=1 width=4) (actual time=0.005..0.005 rows=1 loops=1)
                                  Index Cond: (visitor_id = 1234)
                                  Heap Fetches: 0
-                           ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.035..0.146 rows=57 loops=1)
+                           ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.015..0.062 rows=57 loops=1)
                                  Recheck Cond: (visitor_id = 1234)
                                  Filter: used
                                  Rows Removed by Filter: 20
                                  Heap Blocks: exact=77
-                                 ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.014..0.014 rows=77 loops=1)
+                                 ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.007..0.007 rows=77 loops=1)
                                        Index Cond: (visitor_id = 1234)
-                     ->  Memoize  (cost=0.29..1.15 rows=1 width=30) (actual time=0.003..0.003 rows=1 loops=57)
+                     ->  Memoize  (cost=0.29..1.15 rows=1 width=30) (actual time=0.001..0.001 rows=1 loops=57)
                            Cache Key: ticket.event_id
                            Cache Mode: logical
                            Hits: 0  Misses: 57  Evictions: 0  Overflows: 0  Memory Usage: 8kB
-                           ->  Index Scan using event_pkey on event  (cost=0.28..1.14 rows=1 width=30) (actual time=0.003..0.003 rows=1 loops=57)
+                           ->  Index Scan using event_pkey on event  (cost=0.28..1.14 rows=1 width=30) (actual time=0.001..0.001 rows=1 loops=57)
                                  Index Cond: (event_id = ticket.event_id)
-               ->  Index Scan using idx_performance_event_id on performance  (cost=0.28..0.46 rows=3 width=8) (actual time=0.002..0.002 rows=3 loops=57)
+               ->  Index Scan using idx_performance_event_id on performance  (cost=0.28..0.46 rows=3 width=8) (actual time=0.001..0.001 rows=3 loops=57)
                      Index Cond: (event_id = event.event_id)
-         ->  Materialize  (cost=4.55..65.71 rows=16 width=18) (actual time=0.000..0.002 rows=17 loops=148)
-               ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.017..0.044 rows=18 loops=1)
+         ->  Materialize  (cost=4.55..65.71 rows=16 width=18) (actual time=0.000..0.001 rows=17 loops=148)
+               ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.009..0.023 rows=18 loops=1)
                      Recheck Cond: (visitor_id = 1234)
                      Heap Blocks: exact=18
-                     ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.011..0.011 rows=18 loops=1)
+                     ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.006..0.006 rows=18 loops=1)
                            Index Cond: (visitor_id = 1234)
- Planning Time: 0.826 ms
- Execution Time: 1.542 ms
+ Planning Time: 0.338 ms
+ Execution Time: 0.656 ms
 (36 rows)
 
          Combination 5         
@@ -284,44 +284,44 @@ SET
 SET
                                                                                    QUERY PLAN                                                                                    
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=10000000467.18..10000000471.55 rows=50 width=68) (actual time=2.449..2.631 rows=57 loops=1)
+ GroupAggregate  (cost=10000000467.18..10000000471.55 rows=50 width=68) (actual time=0.640..0.729 rows=57 loops=1)
    Group Key: ticket.event_id
-   ->  Sort  (cost=10000000467.18..10000000467.50 rows=131 width=40) (actual time=2.405..2.454 rows=148 loops=1)
+   ->  Sort  (cost=10000000467.18..10000000467.50 rows=131 width=40) (actual time=0.629..0.648 rows=148 loops=1)
          Sort Key: ticket.event_id
          Sort Method: quicksort  Memory: 32kB
-         ->  Hash Left Join  (cost=10000000393.05..10000000462.57 rows=131 width=40) (actual time=1.077..2.353 rows=148 loops=1)
+         ->  Hash Left Join  (cost=10000000393.05..10000000462.57 rows=131 width=40) (actual time=0.279..0.617 rows=148 loops=1)
                Hash Cond: (performance.performance_id = rating.performance_id)
-               ->  Hash Join  (cost=10000000327.22..10000000396.40 rows=131 width=38) (actual time=0.957..2.163 rows=148 loops=1)
+               ->  Hash Join  (cost=10000000327.22..10000000396.40 rows=131 width=38) (actual time=0.250..0.563 rows=148 loops=1)
                      Hash Cond: (ticket.event_id = event.event_id)
-                     ->  Nested Loop  (cost=10000000284.99..10000000353.83 rows=131 width=16) (actual time=0.489..1.603 rows=148 loops=1)
-                           ->  Hash Join  (cost=284.70..347.88 rows=131 width=16) (actual time=0.454..1.461 rows=148 loops=1)
+                     ->  Nested Loop  (cost=10000000284.99..10000000353.83 rows=131 width=16) (actual time=0.102..0.394 rows=148 loops=1)
+                           ->  Hash Join  (cost=284.70..347.88 rows=131 width=16) (actual time=0.095..0.358 rows=148 loops=1)
                                  Hash Cond: (performance.event_id = ticket.event_id)
-                                 ->  Index Scan using idx_performance_event_id on performance  (cost=0.28..59.52 rows=1483 width=8) (actual time=0.041..0.653 rows=1483 loops=1)
-                                 ->  Hash  (cost=283.78..283.78 rows=52 width=8) (actual time=0.366..0.368 rows=57 loops=1)
+                                 ->  Index Scan using idx_performance_event_id on performance  (cost=0.28..59.52 rows=1483 width=8) (actual time=0.008..0.167 rows=1483 loops=1)
+                                 ->  Hash  (cost=283.78..283.78 rows=52 width=8) (actual time=0.080..0.081 rows=57 loops=1)
                                        Buckets: 1024  Batches: 1  Memory Usage: 11kB
-                                       ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.110..0.346 rows=57 loops=1)
+                                       ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.019..0.074 rows=57 loops=1)
                                              Recheck Cond: (visitor_id = 1234)
                                              Filter: used
                                              Rows Removed by Filter: 20
                                              Heap Blocks: exact=77
-                                             ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.046..0.046 rows=77 loops=1)
+                                             ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.008..0.009 rows=77 loops=1)
                                                    Index Cond: (visitor_id = 1234)
                            ->  Materialize  (cost=0.29..4.31 rows=1 width=4) (actual time=0.000..0.000 rows=1 loops=148)
-                                 ->  Index Only Scan using visitor_pkey on visitor  (cost=0.29..4.31 rows=1 width=4) (actual time=0.022..0.024 rows=1 loops=1)
+                                 ->  Index Only Scan using visitor_pkey on visitor  (cost=0.29..4.31 rows=1 width=4) (actual time=0.004..0.004 rows=1 loops=1)
                                        Index Cond: (visitor_id = 1234)
                                        Heap Fetches: 0
-                     ->  Hash  (cost=34.97..34.97 rows=580 width=30) (actual time=0.451..0.452 rows=580 loops=1)
+                     ->  Hash  (cost=34.97..34.97 rows=580 width=30) (actual time=0.145..0.146 rows=580 loops=1)
                            Buckets: 1024  Batches: 1  Memory Usage: 45kB
-                           ->  Index Scan using event_pkey on event  (cost=0.28..34.97 rows=580 width=30) (actual time=0.058..0.325 rows=580 loops=1)
-               ->  Hash  (cost=65.63..65.63 rows=16 width=18) (actual time=0.104..0.106 rows=18 loops=1)
+                           ->  Index Scan using event_pkey on event  (cost=0.28..34.97 rows=580 width=30) (actual time=0.012..0.086 rows=580 loops=1)
+               ->  Hash  (cost=65.63..65.63 rows=16 width=18) (actual time=0.027..0.028 rows=18 loops=1)
                      Buckets: 1024  Batches: 1  Memory Usage: 9kB
-                     ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.040..0.095 rows=18 loops=1)
+                     ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.008..0.024 rows=18 loops=1)
                            Recheck Cond: (visitor_id = 1234)
                            Heap Blocks: exact=18
-                           ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.025..0.025 rows=18 loops=1)
+                           ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.004..0.004 rows=18 loops=1)
                                  Index Cond: (visitor_id = 1234)
- Planning Time: 0.942 ms
- Execution Time: 2.813 ms
+ Planning Time: 0.437 ms
+ Execution Time: 0.785 ms
 (38 rows)
 
          Combination 6          
@@ -333,44 +333,44 @@ SET
 SET
                                                                                QUERY PLAN                                                                                
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=10000000519.91..10000000570.73 rows=50 width=68) (actual time=1.536..1.862 rows=57 loops=1)
+ GroupAggregate  (cost=10000000519.91..10000000570.73 rows=50 width=68) (actual time=1.165..1.478 rows=57 loops=1)
    Group Key: ticket.event_id
-   ->  Merge Join  (cost=10000000519.91..10000000566.69 rows=131 width=40) (actual time=1.522..1.780 rows=148 loops=1)
+   ->  Merge Join  (cost=10000000519.91..10000000566.69 rows=131 width=40) (actual time=1.152..1.408 rows=148 loops=1)
          Merge Cond: (ticket.event_id = event.event_id)
-         ->  Merge Join  (cost=10000000519.64..10000000528.62 rows=131 width=18) (actual time=1.513..1.662 rows=148 loops=1)
+         ->  Merge Join  (cost=10000000519.64..10000000528.62 rows=131 width=18) (actual time=1.142..1.277 rows=148 loops=1)
                Merge Cond: (performance.event_id = ticket.event_id)
-               ->  Sort  (cost=10000000234.38..10000000238.09 rows=1483 width=18) (actual time=1.409..1.459 rows=1197 loops=1)
+               ->  Sort  (cost=10000000234.38..10000000238.09 rows=1483 width=18) (actual time=1.055..1.100 rows=1197 loops=1)
                      Sort Key: performance.event_id
                      Sort Method: quicksort  Memory: 84kB
-                     ->  Merge Left Join  (cost=10000000066.52..10000000156.27 rows=1483 width=18) (actual time=0.102..1.151 rows=1483 loops=1)
+                     ->  Merge Left Join  (cost=10000000066.52..10000000156.27 rows=1483 width=18) (actual time=0.086..0.853 rows=1483 loops=1)
                            Merge Cond: (performance.performance_id = rating.performance_id)
-                           ->  Nested Loop  (cost=10000000000.57..10000000086.37 rows=1483 width=12) (actual time=0.040..0.878 rows=1483 loops=1)
-                                 ->  Index Scan using performance_pkey on performance  (cost=0.28..63.52 rows=1483 width=8) (actual time=0.026..0.320 rows=1483 loops=1)
+                           ->  Nested Loop  (cost=10000000000.57..10000000086.37 rows=1483 width=12) (actual time=0.038..0.644 rows=1483 loops=1)
+                                 ->  Index Scan using performance_pkey on performance  (cost=0.28..63.52 rows=1483 width=8) (actual time=0.026..0.265 rows=1483 loops=1)
                                  ->  Materialize  (cost=0.29..4.31 rows=1 width=4) (actual time=0.000..0.000 rows=1 loops=1483)
-                                       ->  Index Only Scan using visitor_pkey on visitor  (cost=0.29..4.31 rows=1 width=4) (actual time=0.008..0.009 rows=1 loops=1)
+                                       ->  Index Only Scan using visitor_pkey on visitor  (cost=0.29..4.31 rows=1 width=4) (actual time=0.006..0.007 rows=1 loops=1)
                                              Index Cond: (visitor_id = 1234)
                                              Heap Fetches: 0
-                           ->  Sort  (cost=65.95..65.99 rows=16 width=18) (actual time=0.058..0.060 rows=18 loops=1)
+                           ->  Sort  (cost=65.95..65.99 rows=16 width=18) (actual time=0.046..0.048 rows=18 loops=1)
                                  Sort Key: rating.performance_id
                                  Sort Method: quicksort  Memory: 25kB
-                                 ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.021..0.049 rows=18 loops=1)
+                                 ->  Bitmap Heap Scan on rating  (cost=4.55..65.63 rows=16 width=18) (actual time=0.015..0.039 rows=18 loops=1)
                                        Recheck Cond: (visitor_id = 1234)
                                        Heap Blocks: exact=18
-                                       ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.011..0.011 rows=18 loops=1)
+                                       ->  Bitmap Index Scan on rating_pkey  (cost=0.00..4.54 rows=16 width=0) (actual time=0.007..0.007 rows=18 loops=1)
                                              Index Cond: (visitor_id = 1234)
-               ->  Sort  (cost=285.26..285.39 rows=52 width=8) (actual time=0.101..0.105 rows=57 loops=1)
+               ->  Sort  (cost=285.26..285.39 rows=52 width=8) (actual time=0.084..0.087 rows=57 loops=1)
                      Sort Key: ticket.event_id
                      Sort Method: quicksort  Memory: 26kB
-                     ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.021..0.094 rows=57 loops=1)
+                     ->  Bitmap Heap Scan on ticket  (cost=4.98..283.78 rows=52 width=8) (actual time=0.023..0.077 rows=57 loops=1)
                            Recheck Cond: (visitor_id = 1234)
                            Filter: used
                            Rows Removed by Filter: 20
                            Heap Blocks: exact=77
                            ->  Bitmap Index Scan on ticket_pkey  (cost=0.00..4.97 rows=72 width=0) (actual time=0.010..0.010 rows=77 loops=1)
                                  Index Cond: (visitor_id = 1234)
-         ->  Index Scan using event_pkey on event  (cost=0.28..34.97 rows=580 width=30) (actual time=0.008..0.068 rows=460 loops=1)
- Planning Time: 1.430 ms
- Execution Time: 1.939 ms
+         ->  Index Scan using event_pkey on event  (cost=0.28..34.97 rows=580 width=30) (actual time=0.008..0.085 rows=460 loops=1)
+ Planning Time: 0.708 ms
+ Execution Time: 1.540 ms
 (38 rows)
 
 RESET

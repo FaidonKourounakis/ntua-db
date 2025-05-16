@@ -9,7 +9,8 @@ The file `sql/load.sql` was too large to include on the [repository](https://git
 - `sql/` contains all sql files demanded by the project description, including the schema, constraints & triggers, indexes, data, queries and their outputs
 - `code/` contains all scripts and my own code used
 - `diagrams/` contains the relational and the ER diagram
-- `docs/` contians the report for the project.
+- `docs/` contains the report for the project.
+- `other/` contains the rest, like the project description, the source of the ER diagram, docx of the report etc.
 
 ## Instructions
 
